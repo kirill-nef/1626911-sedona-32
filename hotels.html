@@ -48,6 +48,114 @@
             </button>
         </ul>
     </nav>
-</header>
+</header> <!-- //Блок навигации -->
+
+<main class="main_inner">
+    <!-- Блок с фильтрами -->
+    <!-- ================== -->
+    <header class="inner_header">
+        <h1 class="inner_header_title">Список гостинниц</h1>
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs_item">
+                <a class="breadcrumbs_link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs_item">
+                <a class="breadcrumbs_link">Гостинницы</a>
+            </li>
+        </ul>
+    </header>
+
+    <h2 class="visually-hidden">Список гостинниц с фильтрами</h2>
+
+    <!-- Фильтр - инфраструктура -->
+    <fieldset class="catalog-filter-group">
+        <legend class="catalog-filter-title">Инфраструктура:</legend>
+        <ul class="catalog-filter-list">
+
+            <li class="catalog-filter-item">
+                <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="swimming_pool" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Бассейн</span>
+                </label>
+            </li>
+
+            <li class="catalog-filter-item">
+                <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Парковка</span>
+                </label>
+            </li>
+
+            <li class="catalog-filter-item">
+                <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Wi-Fi</span>
+                </label>
+            </li>
+        </ul>
+    </fieldset>
+
+    <!-- Фильтр - тип жилья -->
+    <fieldset class="catalog_filter_group">
+        <legend class="catalog_filter_title">Тип жилья:</legend>
+        <ul class="catalog_filter_list">
+            <li class="catalog_filter_item">
+                <label class="control">
+                    <input class="visually_hidden control_input" type="radio" name="hotel_group" value="hotel" checked> 
+                    <span class="control_mark"></span>
+                    <span class="control_label">Гостинница</span>
+                </label>
+            </li>
+            <li class="catalog_filter_item">
+                <label class="control">
+                    <input class="visually_hidden control_input" type="radio" name="hotel_group" value="motel">
+                    <span class="control_mark"></span>
+                    <span class="control_label">Мотель</span>
+                </label>
+            </li>
+            <li class="catalog_filter_item">
+                <label class="control">
+                    <input class="visually_hidden control_input" type="radio" name="hotel_group" value="appartaments">
+                    <span class="control_mark"></span>
+                    <span class="control_label">Аппартаменты</span>
+                </label>
+            </li>
+        </ul>
+    </fieldset>
+
+    <!-- Фильтр - Стоимость, ₽: -->
+    <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+            <button class="range-toggle toggle-min" type="button">
+                <span class="visually-hidden">Изменить минимальную цену.</span>
+            </button>
+            <button class="range-toggle toggle-max" type="button">
+                <span class="visually-hidden">Изменить максимальную цену.</span>
+            </button>
+
+            <label class="catalog-filter-label">
+                от <input class="catalog-filter-input" type="number" name="min-price"> ₽
+            </label>
+            <label class="catalog-filter-label">
+                до <input class="catalog-filter-input" type="number" name="max-price"> ₽
+            </label>
+        </fieldset>
+    </form>
+
+<h2 class="visually-hidden">Вывод списка гостинниц</h2>
+
+
+
+
+
+
+
+
+</main>
+
 
 </html>
