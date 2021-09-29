@@ -104,7 +104,7 @@
         <ul class="catalog_filter_list">
             <li class="catalog_filter_item">
                 <label class="control">
-                    <input class="visually_hidden control_input" type="radio" name="hotel_group" value="hotel" checked> 
+                    <input class="visually_hidden control_input" type="radio" name="hotel_group" value="hotel" checked>
                     <span class="control_mark"></span>
                     <span class="control_label">Гостинница</span>
                 </label>
@@ -144,16 +144,82 @@
                 до <input class="catalog-filter-input" type="number" name="max-price"> ₽
             </label>
         </fieldset>
+    <!-- Кнопки -->
+    <button class="button" type="submit">Показать</button>
+    <button class="button" type="submit">Сбросить</button>
     </form>
 
-<h2 class="visually-hidden">Вывод списка гостинниц</h2>
+    <!-- Блок сортировки -->
+    <h2 class="visually_hidden">Сортировка списка гостинниц</h2>
+    <form class="sorting_type">
+        <label class="visually_hidden" for="sorting">Сортировка</label>
+        <select class="select_control" id="sorting" name="sorting">
+            <option value="popular">Сначала популярное</option>
+            <option value="cheap">Сначала дешёвое</option>
+            <option value="expensive">Сначала дорогое</option>
+        </select>
+    </form>
+    <a href="#" class="button button_light">
+        <span class="visually_hidden">Показать список</span>
+    </a>
+    <a href="#" class="button">
+        <span class="visually_hidden">Показать карточки</span>
+    </a>
+    <a href="#" class="button">
+        <span class="visually_hidden">Показать по одному</span>
+    </a>
 
-
-
-
-
-
-
+    <!-- Блок с карточками гостинниц -->   
+    <h2 class="visually_hidden">Карточки гостинниц</h2>
+    <ul class="hotels_list">
+    <!-- Отель 1 -->          
+        <li class="hotels_card">
+            <img class="hotels_card_image" src="#" alt="Amara Resort & Spa">
+            <a class="hotels_card_link" href="hotels.html">
+                <h3 class="hotels_card_title">Amara Resort & Spa</h3>
+            </a>
+            <b class="hotels_card_price">от 4000₽</b>
+            <a href="#" class="hotels_detail_button button">Подробно</a>
+            <button class="button" type="submit">Избранное</button>
+            <img class="hotels_card_stars" src="#" alt="4 stars">
+            <p class="hotels_card_rate">Рейтинг: 8,5</p>
+        </li>
+    <!-- Отель 2 -->       
+    <li class="hotels_card">
+        <img class="hotels_card_image" src="#" alt="Desert Quail Inn">
+        <a class="hotels_card_link" href="hotels.html">
+            <h3 class="hotels_card_title">Desert Quail Inn</h3>
+        </a>
+        <b class="hotels_card_price">от 3000₽</b>
+        <a href="#" class="hotels_detail_button button">Подробно</a>
+        <button class="button" type="submit">Избранное</button>
+        <img class="hotels_card_stars" src="#" alt="3 stars">
+        <p class="hotels_card_rate">Рейтинг: 8,9</p>
+    </li>
+    <!-- Отель 3 -->       
+    <li class="hotels_card">
+        <img class="hotels_card_image" src="#" alt="Villas at Poco Diablo">
+        <a class="hotels_card_link" href="hotels.html">
+            <h3 class="hotels_card_title">Villas at Poco Diablo</h3>
+        </a>
+        <b class="hotels_card_price">от 2000₽</b>
+        <a href="#" class="hotels_detail_button button">Подробно</a>
+        <button class="button" type="submit">Избранное</button>
+        <img class="hotels_card_stars" src="#" alt="2 stars">
+        <p class="hotels_card_rate">Рейтинг: 9,2</p>
+    </li>
+    <!-- Отель 4 -->       
+    <li class="hotels_card">
+        <img class="hotels_card_image" src="#" alt="GreenTree Inn">
+        <a class="hotels_card_link" href="hotels.html">
+            <h3 class="hotels_card_title">GreenTree Inn</h3>
+        </a>
+        <b class="hotels_card_price">от 3000₽</b>
+        <a href="#" class="hotels_detail_button button">Подробно</a>
+        <button class="button" type="submit">Избранное</button>
+        <img class="hotels_card_stars" src="#" alt="2 stars">
+        <p class="hotels_card_rate">Рейтинг: 9,2</p>
+    </li>
 
 </main>
 
