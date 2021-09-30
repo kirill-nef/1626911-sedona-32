@@ -67,31 +67,32 @@
             <h2 class="visually-hidden">Список гостинниц с фильтрами</h2>
             <!-- Фильтр - инфраструктура -->
             <fieldset class="catalog-filter-group">
-            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-                <legend class="catalog-filter-title">Инфраструктура:</legend>
-                <ul class="catalog-filter-list">
-                    <li class="catalog-filter-item">
-                        <label class="control">
-                            <input class="visually-hidden control-input" type="checkbox" name="swimming_pool" checked>
-                            <span class="control-mark"></span>
-                            <span class="control-label">Бассейн</span>
-                        </label>
-                    </li>
-                    <li class="catalog-filter-item">
-                        <label class="control">
-                            <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
-                            <span class="control-mark"></span>
-                            <span class="control-label">Парковка</span>
-                        </label>
-                    </li>
-                    <li class="catalog-filter-item">
-                        <label class="control">
-                            <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
-                            <span class="control-mark"></span>
-                            <span class="control-label">Wi-Fi</span>
-                        </label>
-                    </li>
-                </ul>
+                <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+                    <legend class="catalog-filter-title">Инфраструктура:</legend>
+                    <ul class="catalog-filter-list">
+                        <li class="catalog-filter-item">
+                            <label class="control">
+                                <input class="visually-hidden control-input" type="checkbox" name="swimming_pool"
+                                    checked>
+                                <span class="control-mark"></span>
+                                <span class="control-label">Бассейн</span>
+                            </label>
+                        </li>
+                        <li class="catalog-filter-item">
+                            <label class="control">
+                                <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                                <span class="control-mark"></span>
+                                <span class="control-label">Парковка</span>
+                            </label>
+                        </li>
+                        <li class="catalog-filter-item">
+                            <label class="control">
+                                <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                                <span class="control-mark"></span>
+                                <span class="control-label">Wi-Fi</span>
+                            </label>
+                        </li>
+                    </ul>
             </fieldset>
             <!-- Фильтр - тип жилья -->
             <fieldset class="catalog_filter_group">
@@ -123,25 +124,25 @@
                 </ul>
             </fieldset>
             <!-- Фильтр - Стоимость, ₽: -->
-                <fieldset class="catalog-filter-group">
-                    <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                    <button class="range-toggle toggle-min" type="button">
-                        <span class="visually-hidden">Изменить минимальную цену.</span>
-                    </button>
-                    <button class="range-toggle toggle-max" type="button">
-                        <span class="visually-hidden">Изменить максимальную цену.</span>
-                    </button>
+            <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                <button class="range-toggle toggle-min" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="range-toggle toggle-max" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
 
-                    <label class="catalog-filter-label">
-                        от <input class="catalog-filter-input" type="number" name="min-price"> ₽
-                    </label>
-                    <label class="catalog-filter-label">
-                        до <input class="catalog-filter-input" type="number" name="max-price"> ₽
-                    </label>
-                </fieldset>
-                <!-- Кнопки -->
-                <button class="button" type="submit">Показать</button>
-                <button class="button" type="submit">Сбросить</button>
+                <label class="catalog-filter-label">
+                    от <input class="catalog-filter-input" type="number" name="min-price"> ₽
+                </label>
+                <label class="catalog-filter-label">
+                    до <input class="catalog-filter-input" type="number" name="max-price"> ₽
+                </label>
+            </fieldset>
+            <!-- Кнопки -->
+            <button class="button" type="submit">Показать</button>
+            <button class="button" type="submit">Сбросить</button>
             </form>
         </section> <!-- //Блок с фильтрами -->
 
