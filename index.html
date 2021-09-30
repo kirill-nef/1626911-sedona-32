@@ -1,158 +1,181 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  <body>
-    <header class="page_header">
-      <!-- Блок навигации -->
-      <!-- ================== -->
-      <nav class="navigation">
-        <!-- Левая навигация -->
-        <ul class="navigation_list">
-          <li class="navigation_item">
-            <a class="navigation_link">Главная</a>
-          </li>
-          <li class="navigation_item">
-            <a href="#" class="navigation_link">О Седоне</a>
-          </li>
-          <li class="navigation_item">
-            <a href="hotels.html" class="navigation_link">Гостинницы</a>
-          </li>
-        </ul>
-
-        <!-- Логотип по идее можно отдельно спозиционировать хоть куда, не знаю как правильно -->
-        <a href="index.html" class="logo_link">
-          <img class="logo_icon" src="" alt="Логотип Седоны">
-        </a>
-        <!-- Правая навигация -->
-        <ul class="navigation_list navigation_user">
-          <li class="navigation_item">
-            <a class="navigation_link" href="">
-              <span class="visually_hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="navigation_item">
-            <a class="navigation_link" href="">
-              <span class="visually_hidden">favourites</span>
-            </a>
-          </li>
-          <!-- Правая навигация - кнопка -->
-          <button class="navigation_button" type="button">
-            <span class="visually_hidden">Хочу сюда</span>
-          </button>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- Блок приветствие -->
+<body>
+  <header class="page_header">
+    <!-- Блок навигации -->
     <!-- ================== -->
-    <main class="main_index">
-      <section class="welcome">
-        <h1 class="visually_hidden">Welcome SEDONA</h1>
-        <img class="welcome_logo" src="" alt="Логотип приветствия Седоны">
-        <h2 class="welcome_title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p class="welcome_suptitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      </section>
+    <nav class="navigation">
+      <!-- Левая навигация -->
+      <ul class="navigation_list">
+        <li class="navigation_item">
+          <a class="navigation_link">Главная</a>
+        </li>
+        <li class="navigation_item">
+          <a href="#" class="navigation_link">О Седоне</a>
+        </li>
+        <li class="navigation_item">
+          <a href="hotels.html" class="navigation_link">Гостинницы</a>
+        </li>
+      </ul>
 
-      <!-- Блок описания из карточек и картинок -->
-      <!-- ================== -->
-      <h1 class="visually_hidden">Блок описания из карточек и картинок</h3>      
+      <!-- Логотип по идее можно отдельно спозиционировать хоть куда, не знаю как правильно -->
+      <a href="index.html" class="logo_link">
+        <img class="logo_icon" src="" alt="Логотип Седоны">
+      </a>
+      <!-- Правая навигация -->
+      <ul class="navigation_list navigation_user">
+        <li class="navigation_item">
+          <a class="navigation_link" href="">
+            <span class="visually_hidden">Поиск</span>
+          </a>
+        </li>
+        <li class="navigation_item">
+          <a class="navigation_link" href="">
+            <span class="visually_hidden">favourites</span>
+          </a>
+        </li>
+        <!-- Правая навигация - кнопка -->
+        <button class="navigation_button" type="button">
+          <span class="visually_hidden">Хочу сюда</span>
+        </button>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Блок приветствие -->
+  <!-- ================== -->
+  <main class="main_index">
+    <section class="welcome">
+      <h1 class="visually_hidden">Welcome SEDONA</h1>
+      <img class="welcome_logo" src="" alt="Логотип приветствия Седоны">
+      <h2 class="welcome_title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <p class="welcome_suptitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    </section>
+
+    <!-- Блок описания из карточек и картинок -->
+    <!-- ================== -->
+
+    <h1 class="visually_hidden">Блок описания из карточек и картинок</h3>
       <section class="description">
-        <!-- 1 карточка -->
-        <div class="description_card">
-          <ul class="description_list">
-            <li class="description_item">
-              <h3 class="description_title">Настоящий городок</h3>
-              <p class="description_suptitle">— №1 —</p>
-              <p class="description_suptitle">Седона — не аттракцион для туристов, там течёт
-                своя жизнь</p>
-            </li>
-          </ul>
-        </div>
-        <!-- 2 картинка -->
-        <div class="description_card">
-          <h3 class="visually_hidden">Фото домов</h3>
-          <img class="description_photo" src="#" alt="Фото домов">
-        </div>
-        <!-- 3 карточка -->
-        <div class="description_card">
-          <ul class="description_list">
-            <li class="description_item">
-              <img class="desctiption_icon" src="#" alt="Жильё">
-              <h3 class="description_title">Жильё</h3>
-              <p class="description_suptitle">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-            </li>
-          </ul>
-        </div>
-        <!-- 4 карточка -->
-        <div class="description_card">
-          <ul class="description_list">
-            <li class="description_item">
-              <img class="desctiption_icon" src="#" alt="Еда">
-              <h3 class="description_title">Еда</h3>
-              <p class="description_suptitle">РВсегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-            </li>
-          </ul>
-        </div>
-        <!-- 5 карточка -->
-        <div class="description_card">
-          <ul class="description_list">
-            <li class="description_item">
-              <img class="desctiption_icon" src="#" alt="Сувениры">
-              <h3 class="description_title">Сувениры</h3>
-              <p class="description_suptitle">Не только китайского, но и настоящего местного производства!</p>
-            </li>
-          </ul>
-        </div>
-        <!-- 6 картинка -->
-        <div class="description_card">
-          <h3 class="visually_hidden">Фото гор</h3>
-          <img class="description_photo" src="#" alt="Фото гор">
-        </div>
-        <!-- 7 карточка -->
-        <div class="description_card">
-          <ul class="description_list">
-            <li class="description_item">
-              <h3 class="description_title">Там есть мост дьявола</h3>
-              <p class="description_suptitle">— №2 —</p>
-              <p class="description_suptitle">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            </li>
-          </ul>
-        </div>
-        <!-- 8 карточка -->
-        <div class="description_card">
-          <ul class="description_list">
-            <li class="description_item">
-              <h3 class="description_title">Небольшая площадь</h3>
-              <p class="description_suptitle">— №3 —</p>
-              <p class="description_suptitle">Все достопримечательности находятся очень близко</p>
-            </li>
-          </ul>
-        </div>
-        <!-- 9 карточка -->
-        <div class="description_card">
-          <ul class="description_list">
-            <li class="description_item">
-              <h3 class="description_title">Красивая дорога</h3>
-              <p class="description_suptitle">— №4 —</p>
-              <p class="description_suptitle">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </li>
-          </ul>
-        </div>
-        <!-- 10 карточка -->
-        <div class="description_card">
-          <ul class="description_list">
-            <li class="description_item">
-              <h3 class="description_title">Мало туристов</h3>
-              <p class="description_suptitle">— №5 —</p>
-              <p class="description_suptitle">Большинство едет в Гранд Каньон и толпится там</p>
-            </li>
-          </ul>
-        </div>
+        <ul class="card">
+          <!-- 1 карточка -->
+          <li class="card_item">
+            <div class="description_card">
+              <ul class="description_list">
+                <li class="description_item">
+                  <h3 class="description_title">Настоящий городок</h3>
+                  <p class="description_suptitle">— №1 —</p>
+                  <p class="description_suptitle">Седона — не аттракцион для туристов, там течёт
+                    своя жизнь</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- 2 картинка -->
+          <li class="card_item">
+            <div class="description_card">
+              <h3 class="visually_hidden">Фото домов</h3>
+              <img class="description_photo" src="#" alt="Фото домов">
+            </div>
+          </li>
+          <!-- 3 карточка -->
+          <li class="card_item">
+            <div class="description_card">
+              <ul class="description_list">
+                <li class="description_item">
+                  <img class="desctiption_icon" src="#" alt="Жильё">
+                  <h3 class="description_title">Жильё</h3>
+                  <p class="description_suptitle">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- 4 карточка -->
+          <li class="card_item">
+            <div class="description_card">
+              <ul class="description_list">
+                <li class="description_item">
+                  <img class="desctiption_icon" src="#" alt="Еда">
+                  <h3 class="description_title">Еда</h3>
+                  <p class="description_suptitle">РВсегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- 5 карточка -->
+          <li class="card_item">
+            <div class="description_card">
+              <ul class="description_list">
+                <li class="description_item">
+                  <img class="desctiption_icon" src="#" alt="Сувениры">
+                  <h3 class="description_title">Сувениры</h3>
+                  <p class="description_suptitle">Не только китайского, но и настоящего местного производства!</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- 6 картинка -->
+          <li class="card_item">
+            <div class="description_card">
+              <h3 class="visually_hidden">Фото гор</h3>
+              <img class="description_photo" src="#" alt="Фото гор">
+            </div>
+          </li>
+          <!-- 7 карточка -->
+          <li class="card_item">
+            <div class="description_card">
+              <ul class="description_list">
+                <li class="description_item">
+                  <h3 class="description_title">Там есть мост дьявола</h3>
+                  <p class="description_suptitle">— №2 —</p>
+                  <p class="description_suptitle">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- 8 карточка -->
+          <li class="card_item">
+            <div class="description_card">
+              <ul class="description_list">
+                <li class="description_item">
+                  <h3 class="description_title">Небольшая площадь</h3>
+                  <p class="description_suptitle">— №3 —</p>
+                  <p class="description_suptitle">Все достопримечательности находятся очень близко</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- 9 карточка -->
+          <li class="card_item">
+            <div class="description_card">
+              <ul class="description_list">
+                <li class="description_item">
+                  <h3 class="description_title">Красивая дорога</h3>
+                  <p class="description_suptitle">— №4 —</p>
+                  <p class="description_suptitle">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- 10 карточка -->
+          <li class="card_item">
+            <div class="description_card">
+              <ul class="description_list">
+                <li class="description_item">
+                  <h3 class="description_title">Мало туристов</h3>
+                  <p class="description_suptitle">— №5 —</p>
+                  <p class="description_suptitle">Большинство едет в Гранд Каньон и толпится там</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
       </section> <!-- // Блок описания из карточек и картинок -->
 
       <!-- Блок поиска гостинницы -->
@@ -174,52 +197,54 @@
 
         <form class="mailing_form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="mailing_email"></p>
-            <label class="visually_hidden" for="mailing_form_mail">Email</label>
-            <input class="mailing_field" type="email" id="mailing_form_mail" name="mailing_form_mail" placeholder="Ваш e-mail">
+          <label class="visually_hidden" for="mailing_form_mail">Email</label>
+          <input class="mailing_field" type="email" id="mailing_form_mail" name="mailing_form_mail"
+            placeholder="Ваш e-mail">
           </p>
           <button class="mailing_button" type="submit">Записаться</button>
         </form>
       </section>
-    </main> <!-- // Блок основного контента -->
+  </main> <!-- // Блок основного контента -->
 
 
-    <!-- Блок footer -->
-    <!-- ================== -->
-    <footer class="page_footer">
-      <!-- Ссылки на соцсети -->
-      <h2 class="visually_hidden">Ссылки на соцсети</h2>
-      <section class="footer_social">
-        <ul class="footer_social_list">
-          <li class="footer_social_item">
-            <a class="button" href="https://twitter.com/htmlacademy_ru">
-              <span class="visually_hidden">Twitter</span>
-            </a>
-          </li>
-          <li class="footer_social_item">
-            <a class="button" href="https://ru_ru.facebook.com/htmlacademy">
-              <span class="visually_hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="footer_social_item">
-            <a class="button" href="https://www.youtube.com/channel/UChUxTMjJGo_JDRY8pNTGL2g">
-              <span class="visually_hidden">YouTube</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <!-- Телефон -->
-      <h2 class="visually_hidden">Контакты</h2>
-      <section class="footer_contacts">
-        <address class="footer_contacts_address">
-          <a class="footer_contacts_address_phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </address>
-      </section>
-      <!-- Сайт академии -->
-      <section class="copyright">
-        <a class="copyright_button" href="https://htmlacademy.ru/">
-          <img src="#" alt="logo_htmlacademy">
-        </a>
-      </section>
-    </footer>
-  </body>
+  <!-- Блок footer -->
+  <!-- ================== -->
+  <footer class="page_footer">
+    <!-- Ссылки на соцсети -->
+    <h2 class="visually_hidden">Ссылки на соцсети</h2>
+    <section class="footer_social">
+      <ul class="footer_social_list">
+        <li class="footer_social_item">
+          <a class="button" href="https://twitter.com/htmlacademy_ru">
+            <span class="visually_hidden">Twitter</span>
+          </a>
+        </li>
+        <li class="footer_social_item">
+          <a class="button" href="https://ru_ru.facebook.com/htmlacademy">
+            <span class="visually_hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="footer_social_item">
+          <a class="button" href="https://www.youtube.com/channel/UChUxTMjJGo_JDRY8pNTGL2g">
+            <span class="visually_hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- Телефон -->
+    <h2 class="visually_hidden">Контакты</h2>
+    <section class="footer_contacts">
+      <address class="footer_contacts_address">
+        <a class="footer_contacts_address_phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </address>
+    </section>
+    <!-- Сайт академии -->
+    <section class="copyright">
+      <a class="copyright_button" href="https://htmlacademy.ru/">
+        <img src="#" alt="logo_htmlacademy">
+      </a>
+    </section>
+  </footer>
+</body>
+
 </html>
