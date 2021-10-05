@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Седона: Главная</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -14,7 +15,7 @@
       <!-- Левая навигация -->
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" title="Вы сейчас находитесь на этой странице">Главная</a>
+          <a class="navigation-link" title="Вы сейчас находитесь на главной странице">Главная</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">О Седоне</a>
@@ -24,8 +25,8 @@
         </li>
       </ul>
       <!-- Логотип по идее можно отдельно спозиционировать хоть куда, не знаю как правильно -->
-      <a class="logo-link" title="Вы сейчас находитесь на этой странице">
-        <img class="logo-icon" src="#" alt="Логотип Седоны">
+      <a class="logo-link" title="Вы сейчас находитесь на главной странице">
+        <img class="logo-icon" src="./images/backgrounds/logo-sedona.svg" alt="Логотип Седоны" width="138" height="70">
       </a>
       <!-- Правая навигация -->
       <ul class="navigation-list navigation-user">
@@ -41,7 +42,7 @@
         </li>
         <!-- Правая навигация - кнопка -->
         <li class="navigation-item">
-          <a class="navigation-link button" href="hotels.html"> Хочу сюда</a>
+          <a class="button" href="hotels.html"> Хочу сюда</a>
         </li>
       </ul>
     </nav>
@@ -50,9 +51,15 @@
   <!-- Блок приветствие -->
   <!-- ================== -->
   <main class="main-index">
+
     <section class="welcome">
       <h1 class="visually-hidden">Welcome SEDONA</h1>
-      <img class="welcome-logo" src="" alt="Логотип приветствия Седоны">
+      <img class="welcome-logo" src="./images/backgrounds/logo-welcome.svg" alt="Логотип приветствия Седоны" width="458"
+        height="352">
+      <img class="welcome-logo-bottom" src="./images/backgrounds/bottom-background.svg" width="458" height="352">
+    </section>
+
+    <section class="welcome-text">
       <h2 class="welcome-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p class="welcome-suptitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
@@ -65,7 +72,7 @@
       <ul class="card">
         <!-- 1 карточка -->
         <li class="card-item">
-          <div class="description-card">
+          <div class="description-card card-type-1">
             <h3 class="description-title">Настоящий городок</h3>
             <p class="description-suptitle">— №1 —</p>
             <p class="description-suptitle">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
@@ -73,15 +80,16 @@
         </li>
         <!-- 2 картинка -->
         <li class="card-item">
-          <div class="description-card">
+          <div class="description-image">
             <h3 class="visually-hidden">Фото домов</h3>
-            <img class="description-photo" src="#" alt="Фото домов">
+            <img class="description-photo" src="./images/card-index/photo-1.jpg" alt="Фото домов" width="800"
+              height="384">
           </div>
         </li>
         <!-- 3 карточка -->
         <li class="card-item">
-          <div class="description-card">
-            <img class="desctiption-icon" src="#" alt="Жильё">
+          <div class="description-card card-type-2">
+            <img class="desctiption-icon" src="" alt="Жильё">
             <h3 class="description-title">Жильё</h3>
             <p class="description-suptitle">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </div>
@@ -89,29 +97,30 @@
         <!-- 4 карточка -->
         <li class="card-item">
           <div class="description-card">
-            <img class="desctiption-icon" src="#" alt="Еда">
+            <img class="desctiption-icon" src="" alt="Еда">
             <h3 class="description-title">Еда</h3>
-            <p class="description-suptitle">РВсегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            <p class="description-suptitle">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </div>
         </li>
         <!-- 5 карточка -->
         <li class="card-item">
-          <div class="description-card">
-            <img class="desctiption-icon" src="#" alt="Сувениры">
+          <div class="description-card card-type-2">
+            <img class="desctiption-icon" src="" alt="Сувениры">
             <h3 class="description-title">Сувениры</h3>
             <p class="description-suptitle">Не только китайского, но и настоящего местного производства!</p>
           </div>
         </li>
         <!-- 6 картинка -->
         <li class="card-item">
-          <div class="description-card">
+          <div class="description-image">
             <h3 class="visually-hidden">Фото гор</h3>
-            <img class="description-photo" src="#" alt="Фото гор">
+            <img class="description-photo" src="./images/card-index/photo-2.jpg" alt="Фото гор" width="800"
+              height="384">
           </div>
         </li>
         <!-- 7 карточка -->
         <li class="card-item">
-          <div class="description-card">
+          <div class="description-card card-type-1">
             <h3 class="description-title">Там есть мост дьявола</h3>
             <p class="description-suptitle">— №2 —</p>
             <p class="description-suptitle">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -119,7 +128,7 @@
         </li>
         <!-- 8 карточка -->
         <li class="card-item">
-          <div class="description-card">
+          <div class="description-card card-type-2">
             <h3 class="description-title">Небольшая площадь</h3>
             <p class="description-suptitle">— №3 —</p>
             <p class="description-suptitle">Все достопримечательности находятся очень близко</p>
@@ -127,7 +136,7 @@
         </li>
         <!-- 9 карточка -->
         <li class="card-item">
-          <div class="description-card">
+          <div class="description-card card-type-3">
             <h3 class="description-title">Красивая дорога</h3>
             <p class="description-suptitle">— №4 —</p>
             <p class="description-suptitle">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
@@ -135,7 +144,7 @@
         </li>
         <!-- 10 карточка -->
         <li class="card-item">
-          <div class="description-card">
+          <div class="description-card card-type-2">
             <h3 class="description-title">Мало туристов</h3>
             <p class="description-suptitle">— №5 —</p>
             <p class="description-suptitle">Большинство едет в Гранд Каньон и толпится там</p>
@@ -148,8 +157,9 @@
     <!-- ================== -->
     <section class="search">
       <h2 class="search-title">Заинтересовались?</h2>
-      <p class="search-subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <a class="search-link" href="hotels.html">Поиск гостиницы в Седоне</a>
+      <p class="search-subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+        Седоне</p>
+      <a class="button search-link" href="hotels.html">Поиск гостиницы в Седоне</a>
     </section>
 
     <!-- Блок подписки на рассылку -->
@@ -160,9 +170,10 @@
       <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="mailing-email"></p>
         <label class="visually-hidden" for="mailing-form-mail">Email</label>
-        <input class="mailing-field" type="email" id="mailing-form-mail" name="mailing-form-mail" placeholder="Ваш e-mail">
+        <input class="mailing-field" type="email" id="mailing-form-mail" name="mailing-form-mail"
+          placeholder="Ваш e-mail">
         </p>
-        <button class="mailing-button" type="submit">Записаться</button>
+        <button class="button mailing-button" type="submit">Подписаться</button>
       </form>
     </section>
   </main> <!-- // Блок основного контента -->
@@ -196,14 +207,14 @@
     <section class="footer-contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <address class="footer-contacts-address">
-        <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </address>
     </section>
     <!-- Сайт академии -->
     <section class="copyright">
       <h2 class="visually-hidden">Сайт академии</h2>
       <a class="copyright-button" href="https://htmlacademy.ru/">
-        <img src="#" alt="logo-htmlacademy">
+        <img src="./images/footer/logo_htmlacademy.svg" alt="logo-htmlacademy" width="115" height="33">
       </a>
     </section>
   </footer>
