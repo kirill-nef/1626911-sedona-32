@@ -113,15 +113,7 @@ body {
 
 /* Блок Карточек */
 /* -------------------- */
-.card {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-}
 .description-card {
-  width: 400px;
-  height: 348px;
-
   text-align: center;
 }
 .description-title {
@@ -172,8 +164,6 @@ body {
 /* Блок подписки на рассылку */
 /* -------------------- */
 .mailing {
-  height: 411px;
-
   text-align: center;
   color: #ffffff;
 
@@ -254,10 +244,7 @@ body {
   background-color: #f2f2f2;
 }
 .hotels-stars-item {
-  width: 18px;
-  height: 18px;
-
-  background-image: url("../images/hotels/star.svg");
+   background-image: url("../images/hotels/star.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
