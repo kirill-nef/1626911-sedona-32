@@ -31,8 +31,6 @@ body {
 /* -------------------- */
 /* Общая кнопка коричневого цвета */
 .button {
-  /* font-family: inherit;
-  font-style: normal;*/
   font-weight: 700;
   font-size: 16px;
   text-align: center;
