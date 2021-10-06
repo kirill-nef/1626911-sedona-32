@@ -19,8 +19,6 @@
 /* Style */
 /* -------------------- */
 body {
-  max-width: 1200px;
-
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -31,8 +29,6 @@ body {
 /* -------------------- */
 /* Общая кнопка коричневого цвета */
 .button {
-  padding: 5px;
-
   font-size: 16px;
   font-weight: 700;
   text-align: center;
@@ -244,7 +240,7 @@ body {
   background-color: #f2f2f2;
 }
 .hotels-stars-item {
-   background-image: url("../images/hotels/star.svg");
+  background-image: url("../images/hotels/star.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
