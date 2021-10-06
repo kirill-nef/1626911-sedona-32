@@ -16,6 +16,15 @@
   font-display: swap;
 }
 
+/* Style */
+/* -------------------- */
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  color: #000000;
+  max-width: 1200px;
+}
+
 /* Кнопки */
 /* -------------------- */
 /* Общая кнопка коричневого цвета */
@@ -59,15 +68,6 @@
   text-decoration: none;
   text-align: center;
   padding: 5px;
-}
-
-/* Style */
-/* -------------------- */
-body {
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  color: #000000;
-  max-width: 1200px;
 }
 
 /* Блок Навигации */
@@ -199,7 +199,6 @@ body {
 
 /* Блок с фильтрами */
 /* -------------------- */
-
 .filter {
   background-color: cadetblue;
   background: url("../images/backgrounds/background-2.jpg") center no-repeat;
@@ -238,12 +237,10 @@ body {
 .hotels-card-price {
   font-size: 18px;
 }
-
 .hotels-card-rate {
   background-color: #f2f2f2;
   font-size: 16px;
 }
-
 .hotels-stars-item {
   background: url("../images/hotels/star.svg") center no-repeat;
   width: 18px;
