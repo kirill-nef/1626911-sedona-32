@@ -83,7 +83,9 @@ body {
 /* -------------------- */
 .welcome {
   background-color: cadetblue;
-  background: url("../images/backgrounds/background.jpg") center no-repeat;
+  background-image: url("../images/backgrounds/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
   text-align: center;
@@ -201,7 +203,9 @@ body {
 /* -------------------- */
 .filter {
   background-color: cadetblue;
-  background: url("../images/backgrounds/background-2.jpg") center no-repeat;
+  background-image: url("../images/backgrounds/background-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
 }
@@ -241,7 +245,9 @@ body {
   font-size: 16px;
 }
 .hotels-stars-item {
-  background: url("../images/hotels/star.svg") center no-repeat;
+  background-image: url("../images/hotels/star.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   width: 18px;
   height: 18px;
 }
