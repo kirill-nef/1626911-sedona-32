@@ -22,7 +22,8 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   color: #000000;
-  
+  line-height: 26px;
+
   max-width: 1200px;
 }
 
@@ -152,7 +153,6 @@ body {
 }
 .search-subtitle {
   font-size: 22px;
-  line-height: 26px;
   color: #333333;
 }
 .search-link {
@@ -181,11 +181,9 @@ body {
 }
 .mailing-subtitle {
   font-size: 22px;
-  line-height: 26px;
 }
 .mailing-field {
   font-size: 18px;
-  line-height: 26px;
 }
 
 /* Футер */
