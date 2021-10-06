@@ -21,8 +21,9 @@
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
-  color: #000000;
   line-height: 26px;
+
+  color: #000000;
 
   max-width: 1200px;
 }
@@ -35,23 +36,26 @@ body {
   font-size: 16px;
   text-align: center;
   color: #ffffff;
-  background-color: #756257;
   text-decoration: none;
   text-transform: uppercase;
+
+  background-color: #756257;
 
   padding: 5px;
 }
 /* Кнопка "Загрузить ещё" со страницы hotels */
 .download-button {
   font-size: 20px;
-  background-color: #83b3d3;
   color: #ffffff;
+
+  background-color: #83b3d3;
 }
 /* Кнопка "Подписаться" */
 .mailing-button {
   font-size: 20px;
-  background-color: #83b3d3;
   color: #ffffff;
+
+  background-color: #83b3d3;
 }
 /* Кнопка "Избранного" голубая со страницы hotels */
 .button-favourits-blue {
@@ -64,10 +68,11 @@ body {
 /* Кнопка выбора страниц со страницы hotels */
 .button-search-link {
   font-size: 20px;
-  background-color: #83b3d3;
   color: #ffffff;
   text-decoration: none;
   text-align: center;
+
+  background-color: #83b3d3;
 
   padding: 5px;
 }
@@ -84,13 +89,14 @@ body {
 /* Блок WELCOME */
 /* -------------------- */
 .welcome {
+  color: #ffffff;
+  text-align: center;
+
   background-color: cadetblue;
   background-image: url("../images/backgrounds/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #ffffff;
-  text-align: center;
 }
 .welcome-text {
   line-height: 36px;
@@ -114,9 +120,10 @@ body {
   padding: 0;
 }
 .description-card {
+  text-align: center;
+
   width: 400px;
   height: 348px;
-  text-align: center;
 }
 .description-title {
   font-size: 24px;
@@ -129,8 +136,9 @@ body {
   line-height: 21px;
 }
 .card-type-1 {
-  background-color: #83b3d3;
   color: #ffffff;
+
+  background-color: #83b3d3;
 }
 .card-type-2 {
   background-color: #83b3d31f;
@@ -167,6 +175,7 @@ body {
 .mailing {
   text-align: center;
   color: #ffffff;
+
   background-color: cadetblue;
   background-image: url("../images/backgrounds/background-mailing.jpg");
 
@@ -202,12 +211,13 @@ body {
 /* Блок с фильтрами */
 /* -------------------- */
 .filter {
+  color: #ffffff;
+
   background-color: cadetblue;
   background-image: url("../images/backgrounds/background-2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #ffffff;
 }
 .breadcrumbs-item {
   font-size: 16px;
@@ -241,8 +251,9 @@ body {
   font-size: 18px;
 }
 .hotels-card-rate {
-  background-color: #f2f2f2;
   font-size: 16px;
+
+  background-color: #f2f2f2;
 }
 .hotels-stars-item {
   background-image: url("../images/hotels/star.svg");
