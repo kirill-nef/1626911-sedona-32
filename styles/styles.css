@@ -21,61 +21,64 @@
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 23px;
   color: #000000;
 }
 
 /* Кнопки */
 /* -------------------- */
-/* Общая кнопка коричневого цвета */
-.button {
+/* Общая кнопка */
+.button-common {
   font-size: 16px;
+  line-height: 21px;
   font-weight: 700;
   text-align: center;
-  color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+  color: #ffffff;
 
   background-color: #756257;
 }
-/* Кнопка "Загрузить ещё" со страницы hotels */
-.download-button {
+/* Широкая кнопка - "Поиск гост в седоне" и "загрузить еще" */
+.button-wide {
   font-size: 20px;
-  color: #ffffff;
-
-  background-color: #83b3d3;
+  line-height: 36px;
 }
 /* Кнопка "Подписаться" */
-.mailing-button {
+.button-subscribe {
   font-size: 20px;
-  color: #ffffff;
+  line-height: 26px;
 
   background-color: #83b3d3;
 }
-/* Кнопка "Избранного" голубая со страницы hotels */
-.button-favourits-blue {
+/* Кнопки "Выбора страниц с гостиницами" */
+.buttom-link-active {
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+
+  background-color: #E5E5E5;
+}
+.buttom-link-inactive {
+  font-size: 20px;
+  line-height: 26px;
+
   background-color: #83b3d3;
 }
-/* Кнопка "Избранного" зеленая со страницы hotels */
-.button-favourits-green {
+
+/* Дополнительный тон кнопок */
+.button-color-blue {
+  background-color: #83b3d3;
+}
+.button-color-green {
   background-color: #7db54f;
-}
-/* Кнопка выбора страниц со страницы hotels */
-.button-search-link {
-  padding: 5px;
-
-  font-size: 20px;
-  color: #ffffff;
-  text-decoration: none;
-  text-align: center;
-
-  background-color: #83b3d3;
 }
 
 /* Блок Навигации */
 /* -------------------- */
 .navigation-link {
   font-size: 20px;
+  line-height: 26px;
   font-weight: 700;
   text-decoration: none;
   color: inherit;
@@ -93,18 +96,17 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.welcome-text {
-  line-height: 36px;
-  text-align: center;
-}
 .welcome-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  text-align: center;
   text-transform: uppercase;
 }
 .welcome-suptitle {
   font-size: 22px;
+  line-height: 36px;
+  text-align: center;
 }
 
 /* Блок Карточек */
@@ -114,12 +116,11 @@ body {
 }
 .description-title {
   font-size: 24px;
-  font-weight: 700;
   line-height: 28px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 .description-suptitle {
-  font-size: 18px;
   line-height: 21px;
 }
 .card-type-1 {
@@ -141,11 +142,13 @@ body {
 }
 .search-title {
   font-size: 30px;
+  line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
 }
 .search-subtitle {
   font-size: 22px;
+  line-height: 26px;
   color: #333333;
 }
 .search-link {
@@ -168,14 +171,16 @@ body {
 }
 .mailing-title {
   font-size: 30px;
+  line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
 }
 .mailing-subtitle {
   font-size: 22px;
+  line-height: 26px;
 }
 .mailing-field {
-  font-size: 18px;
+  line-height: 26px;
 }
 
 /* Футер */
@@ -183,12 +188,14 @@ body {
 .footer-contacts-phone {
   font-style: normal;
   font-size: 40px;
+  line-height: 40px;
   text-align: center;
   text-decoration: none;
   color: #000000;
 }
 .inner-header-title {
   font-size: 60px;
+  line-height: 78px;
   font-weight: 700;
   color: #ffffff;
 }
@@ -206,42 +213,36 @@ body {
 }
 .breadcrumbs-item {
   font-size: 16px;
+  line-height: 21px;
 }
 .catalog-filter-title {
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 26px;
   font-weight: 700;
-}
-.control-label,
-.catalog-filter-input {
-  font-size: 18px;
 }
 .sort-text-search {
   font-size: 30px;
+  line-height: 39px;
   text-transform: uppercase;
-}
-.select-control {
-  font-size: 18px;
 }
 
 /* Блок с карточками гостиниц  */
 /* -------------------- */
-.hotels-card-link {
+.hotels-card-title {
   font-size: 24px;
+  line-height: 31px;
   font-weight: 700;
   text-decoration: none;
   color: #000000;
 }
-.hotels-type,
-.hotels-card-price {
-  font-size: 18px;
-}
 .hotels-card-rate {
   font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
 
   background-color: #f2f2f2;
 }
 .hotels-stars-item {
   background-image: url("../images/hotels/star.svg");
-  background-position: center;
   background-repeat: no-repeat;
 }
