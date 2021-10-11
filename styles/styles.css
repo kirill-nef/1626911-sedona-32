@@ -1,28 +1,58 @@
 /* Подключенные шрифты */
 /* -------------------- */
 @font-face {
-  font-family: "PT Sans";
+  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  src: url('../fonts/ptsans-400.woff2') format('woff2');
   font-display: swap;
 }
 
 @font-face {
-  font-family: "PT Sans";
+  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  src: url('../fonts/ptsans-700.woff2') format('woff2');
   font-display: swap;
+}
+
+html {
+  height: 100%;
+  background-color: #e5e5e5;
 }
 
 /* Style */
 /* -------------------- */
 body {
-  font-family: "PT Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  min-height: 100%;
+  margin: 0 auto;
+
+  font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   line-height: 23px;
   color: #000000;
+
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 /* Кнопки */
@@ -51,13 +81,23 @@ body {
 
   background-color: #83b3d3;
 }
+/* Кнопка "Сброс" для страницы hotels */
+.button-reset {
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+
+  border: none;
+  background-color: transparent;
+}
 /* Кнопки "Выбора страниц с гостиницами" */
 .buttom-link-active {
   font-size: 20px;
   line-height: 26px;
   color: #000000;
 
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 .buttom-link-inactive {
   font-size: 20px;
@@ -65,7 +105,6 @@ body {
 
   background-color: #83b3d3;
 }
-
 /* Дополнительный тон кнопок */
 .button-color-blue {
   background-color: #83b3d3;
@@ -76,12 +115,30 @@ body {
 
 /* Блок Навигации */
 /* -------------------- */
+.navigation {
+  display: flex;
+  width: 1058px;
+  margin: 0 auto;
+}
+.navigation-list {
+  display: flex;
+  width: 412px;
+  margin: 0;
+  padding: 0;
+}
+.navigation-user {
+  width: 240px;
+  margin-left: auto;
+}
 .navigation-link {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
   text-decoration: none;
   color: inherit;
+}
+.navigation-item {
+  padding-right: 33px;
 }
 
 /* Блок WELCOME */
@@ -91,7 +148,7 @@ body {
   color: #ffffff;
 
   background-color: cadetblue;
-  background-image: url("../images/backgrounds/background.jpg");
+  background-image: url('../images/backgrounds/background.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -108,11 +165,25 @@ body {
   line-height: 36px;
   text-align: center;
 }
+.welcome-logo {
+  display: block;
+  margin: 0 auto;
+}
 
 /* Блок Карточек */
 /* -------------------- */
+.card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .description-card {
+  width: 400px;
+
   text-align: center;
+}
+.description-image {
+  width: 800px;
 }
 .description-title {
   font-size: 24px;
@@ -167,7 +238,7 @@ body {
   color: #ffffff;
 
   background-color: cadetblue;
-  background-image: url("../images/backgrounds/background-mailing.jpg");
+  background-image: url('../images/backgrounds/background-mailing.jpg');
 }
 .mailing-title {
   font-size: 30px;
@@ -180,11 +251,26 @@ body {
   line-height: 26px;
 }
 .mailing-field {
+  width: 600px;
+  height: 60px;
   line-height: 26px;
 }
-
+.mailing-form {
+  display: flex;
+  width: 800px;
+  margin: 0 auto;
+}
+.main-container {
+  flex-grow: 1;
+}
 /* Футер */
 /* -------------------- */
+.page-footer {
+  width: 1058px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
 .footer-contacts-phone {
   font-style: normal;
   font-size: 40px;
@@ -193,27 +279,44 @@ body {
   text-decoration: none;
   color: #000000;
 }
+.footer-social,
+.footer-copyright {
+  width: 300px;
+}
+
+.copyright-button {
+  float: right;
+}
+/* Блок с фильтрами */
+/* -------------------- */
 .inner-header-title {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
   color: #ffffff;
 }
-
-/* Блок с фильтрами */
-/* -------------------- */
 .filter {
   color: #ffffff;
 
   background-color: cadetblue;
-  background-image: url("../images/backgrounds/background-2.jpg");
+  background-image: url('../images/backgrounds/background-2.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* Хлебные крошки */
+.breadcrumbs {
+  display: flex;
+}
 .breadcrumbs-item {
   font-size: 16px;
   line-height: 21px;
+}
+
+.catalog-filter {
+  display: flex;
+  justify-content: space-between;
 }
 .catalog-filter-title {
   font-size: 20px;
@@ -225,9 +328,37 @@ body {
   line-height: 39px;
   text-transform: uppercase;
 }
+.catalog-filter-check {
+  width: 160px;
+}
+.catalog-filter-price {
+  width: 300px;
+}
+.catalog-filter-button {
+  width: 170px;
+}
+.catalog-filter-input {
+  width: 144px;
+}
+.container {
+  width: 1058px;
+  margin: 0 auto;
+}
+
+/* Блок сортировки  */
+/* -------------------- */
+.sort .container {
+  display: flex;
+}
+.sort-block {
+  width: 50%;
+}
 
 /* Блок с карточками гостиниц  */
 /* -------------------- */
+.hotels-card {
+  display: flex;
+}
 .hotels-card-title {
   font-size: 24px;
   line-height: 31px;
@@ -243,6 +374,36 @@ body {
   background-color: #f2f2f2;
 }
 .hotels-stars-item {
-  background-image: url("../images/hotels/star.svg");
+  background-image: url('../images/hotels/star.svg');
   background-repeat: no-repeat;
 }
+.hotels-card-info {
+  margin-left: 37px;
+}
+.hotels-card-status {
+  margin-left: auto;
+}
+.hotels-download {
+  text-align: center;
+}
+.pagination {
+  display: flex;
+}
+.pagination-item {
+  margin-right: 8px;
+}
+.page .container {
+  display: flex;
+}
+.quantity-hotels {
+  margin-left: auto;
+}
+
+/* Для отладки - обводка блока */
+/* outline: 5px solid red;
+outline-offset: -5px; */
+
+/* Для отладки - отключение visually-hidden  */
+/* .visually-hidden {
+  font-size: 0px;
+} */
