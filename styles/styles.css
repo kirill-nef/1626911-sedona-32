@@ -240,6 +240,12 @@ ul {
   background-color: cadetblue;
   background-image: url('../images/backgrounds/background-mailing.jpg');
 }
+
+.mailing-mod {
+  text-align: center;
+  color: #000000;
+}
+
 .mailing-title {
   font-size: 30px;
   line-height: 36px;
@@ -254,6 +260,8 @@ ul {
   width: 600px;
   height: 60px;
   line-height: 26px;
+
+  background-color: #f2f2f2;
 }
 .mailing-form {
   display: flex;
