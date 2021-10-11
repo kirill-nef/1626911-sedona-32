@@ -69,11 +69,13 @@ ul {
 
   background-color: #756257;
 }
+
 /* Широкая кнопка - "Поиск гост в седоне" и "загрузить еще" */
 .button-wide {
   font-size: 20px;
   line-height: 36px;
 }
+
 /* Кнопка "Подписаться" */
 .button-subscribe {
   font-size: 20px;
@@ -81,6 +83,7 @@ ul {
 
   background-color: #83b3d3;
 }
+
 /* Кнопка "Сброс" для страницы hotels */
 .button-reset {
   font-size: 18px;
@@ -91,6 +94,7 @@ ul {
   border: none;
   background-color: transparent;
 }
+
 /* Кнопки "Выбора страниц с гостиницами" */
 .buttom-link-active {
   font-size: 20px;
@@ -99,16 +103,19 @@ ul {
 
   background-color: #e5e5e5;
 }
+
 .buttom-link-inactive {
   font-size: 20px;
   line-height: 26px;
 
   background-color: #83b3d3;
 }
+
 /* Дополнительный тон кнопок */
 .button-color-blue {
   background-color: #83b3d3;
 }
+
 .button-color-green {
   background-color: #7db54f;
 }
@@ -119,17 +126,16 @@ ul {
   display: flex;
   width: 1058px;
   margin: 0 auto;
+  justify-content: space-between;
 }
+
 .navigation-list {
   display: flex;
-  width: 412px;
+  width: 420px;
   margin: 0;
   padding: 0;
 }
-.navigation-user {
-  width: 240px;
-  margin-left: auto;
-}
+
 .navigation-link {
   font-size: 20px;
   line-height: 26px;
@@ -137,6 +143,7 @@ ul {
   text-decoration: none;
   color: inherit;
 }
+
 .navigation-item {
   padding-right: 33px;
 }
@@ -153,6 +160,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .welcome-title {
   font-size: 30px;
   line-height: 36px;
@@ -160,14 +168,21 @@ ul {
   text-align: center;
   text-transform: uppercase;
 }
+
 .welcome-suptitle {
   font-size: 22px;
   line-height: 36px;
   text-align: center;
 }
+
 .welcome-logo {
   display: block;
   margin: 0 auto;
+}
+
+.welcome-text {
+  margin: 0 auto;
+  width: 720px;
 }
 
 /* Блок Карточек */
@@ -177,33 +192,45 @@ ul {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .description-card {
   width: 400px;
 
   text-align: center;
 }
+
 .description-image {
   width: 800px;
 }
+
 .description-title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
 }
+
 .description-suptitle {
   line-height: 21px;
 }
+
 .card-type-1 {
   color: #ffffff;
 
   background-color: #83b3d3;
 }
+
 .card-type-2 {
   background-color: #83b3d31f;
 }
+
 .card-type-3 {
   background-color: #83b3d333;
+}
+
+.card-text {
+  margin: auto;
+  width: 220px;
 }
 
 /* Блок поиска гостинниц */
@@ -211,12 +238,14 @@ ul {
 .search {
   text-align: center;
 }
+
 .search-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
 }
+
 .search-subtitle {
   font-size: 22px;
   line-height: 26px;
@@ -252,10 +281,12 @@ ul {
   font-weight: 700;
   text-transform: uppercase;
 }
+
 .mailing-subtitle {
   font-size: 22px;
   line-height: 26px;
 }
+
 .mailing-field {
   width: 600px;
   height: 60px;
@@ -263,14 +294,17 @@ ul {
 
   background-color: #f2f2f2;
 }
+
 .mailing-form {
   display: flex;
   width: 800px;
   margin: 0 auto;
 }
+
 .main-container {
   flex-grow: 1;
 }
+
 /* Футер */
 /* -------------------- */
 .page-footer {
@@ -279,6 +313,7 @@ ul {
   margin: 0 auto;
   justify-content: space-between;
 }
+
 .footer-contacts-phone {
   font-style: normal;
   font-size: 40px;
@@ -287,6 +322,7 @@ ul {
   text-decoration: none;
   color: #000000;
 }
+
 .footer-social,
 .footer-copyright {
   width: 300px;
@@ -295,6 +331,7 @@ ul {
 .copyright-button {
   float: right;
 }
+
 /* Блок с фильтрами */
 /* -------------------- */
 .inner-header-title {
@@ -303,6 +340,7 @@ ul {
   font-weight: 700;
   color: #ffffff;
 }
+
 .filter {
   color: #ffffff;
 
@@ -317,6 +355,7 @@ ul {
 .breadcrumbs {
   display: flex;
 }
+
 .breadcrumbs-item {
   font-size: 16px;
   line-height: 21px;
@@ -326,28 +365,35 @@ ul {
   display: flex;
   justify-content: space-between;
 }
+
 .catalog-filter-title {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
 }
+
 .sort-text-search {
   font-size: 30px;
   line-height: 39px;
   text-transform: uppercase;
 }
+
 .catalog-filter-check {
   width: 160px;
 }
+
 .catalog-filter-price {
   width: 300px;
 }
+
 .catalog-filter-button {
   width: 170px;
 }
+
 .catalog-filter-input {
   width: 144px;
 }
+
 .container {
   width: 1058px;
   margin: 0 auto;
@@ -358,6 +404,7 @@ ul {
 .sort .container {
   display: flex;
 }
+
 .sort-block {
   width: 50%;
 }
@@ -367,6 +414,7 @@ ul {
 .hotels-card {
   display: flex;
 }
+
 .hotels-card-title {
   font-size: 24px;
   line-height: 31px;
@@ -374,6 +422,7 @@ ul {
   text-decoration: none;
   color: #000000;
 }
+
 .hotels-card-rate {
   font-size: 16px;
   line-height: 21px;
@@ -381,28 +430,36 @@ ul {
 
   background-color: #f2f2f2;
 }
+
 .hotels-stars-item {
   background-image: url('../images/hotels/star.svg');
   background-repeat: no-repeat;
 }
+
 .hotels-card-info {
   margin-left: 37px;
 }
+
 .hotels-card-status {
   margin-left: auto;
 }
+
 .hotels-download {
   text-align: center;
 }
+
 .pagination {
   display: flex;
 }
+
 .pagination-item {
   margin-right: 8px;
 }
+
 .page .container {
   display: flex;
 }
+
 .quantity-hotels {
   margin-left: auto;
 }
