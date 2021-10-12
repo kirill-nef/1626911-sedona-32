@@ -132,16 +132,16 @@ ul {
 .navigation-list {
   display: flex;
   width: 420px;
-  margin: 0;
+  margin: auto;
   padding: 0;
 }
 
 .navigation-item-left {
-  padding-right: 33px;
+  margin-right: 33px;
 }
 
 .navigation-item-right {
-  padding-left: 33px;
+  margin-left: 33px;
 }
 
 .navigation-user {
@@ -414,6 +414,7 @@ ul {
 }
 
 .sort-block {
+  display: flex;
   width: 50%;
 }
 
