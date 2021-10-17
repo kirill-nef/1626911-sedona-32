@@ -194,17 +194,16 @@ ul {
   width: 420px;
   padding: 0;
   margin-left: -17px;
+  align-items: center;
 }
 
 .navigation-list-right {
+  padding: 12px 0;
   display: flex;
   flex-wrap: wrap;
   width: 420px;
   justify-content: flex-end;
-}
-
-.navigation-item-left1 {
-  padding: 0 17px 0 17px;
+  align-items: center;
 }
 
 .navigation-link {
@@ -219,9 +218,10 @@ ul {
 }
 
 .navigation-list-right .navigation-link {
-  min-width: 18px;
-  min-height: 18px;
-  padding: 23px 10px;
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+  margin-right: 4px;
 
   color: #637d85;
 
@@ -232,9 +232,9 @@ ul {
   margin-bottom: -9px;
 }
 
-.navigation-item-right .button-a {
+/* .navigation-item-right .button-a {
   margin: 14px 0 10px;
-}
+} */
 
 /* Блок WELCOME */
 /* ---------------------------------------- */
@@ -279,6 +279,11 @@ ul {
 
 /* Блок Карточек */
 /* ---------------------------------------- */
+
+.card-item {
+  min-height: 384px;
+}
+
 .card {
   display: flex;
   justify-content: center;
@@ -290,9 +295,11 @@ ul {
 }
 
 .description-card {
-  padding: 0;
+  display: flex;
+  align-items: center;
+
   width: 400px;
-  min-height: 384px;
+  height: 100%;
 
   text-align: center;
 }
@@ -303,7 +310,8 @@ ul {
 }
 
 .description-title {
-  margin: 98px 0 25px;
+  margin: 0 auto;
+  width: 172px;
 
   font-size: 24px;
   line-height: 28px;
@@ -312,7 +320,8 @@ ul {
 }
 
 .description-suptitle {
-  margin: 25px 0 25px;
+  margin: 25px auto 25px;
+  width: 226px;
 
   line-height: 21px;
 }
@@ -331,10 +340,19 @@ ul {
   background-color: #83b3d333;
 }
 
+.card-icon {
+  display: block;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 20px;
+
+  border: 1px solid purple;
+}
+
 .card-text {
+  padding: 50px 0;
   display: inline-block;
   margin: 0 auto;
-  width: 220px;
 }
 
 li {
