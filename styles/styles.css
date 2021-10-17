@@ -439,17 +439,19 @@ li {
 /* ---------------------------------------- */
 
 .page-footer {
-  padding-top: 40px;
+  padding: 40px 0;
 }
 
 .footer-content {
   width: 1058px;
   display: flex;
-  margin: 0 auto 30px;
+  margin: 0 auto;
+  align-items: center;
   justify-content: space-between;
 }
 
 .footer-contacts-phone {
+  display: block;
   font-style: normal;
   font-size: 40px;
   line-height: 40px;
@@ -460,13 +462,21 @@ li {
 
 .footer-social-list {
   display: flex;
+  flex-wrap: wrap;
   min-height: 40px;
   align-items: center;
 }
 
 .footer-button {
-  padding: 1px;
+  display: block;
+
+  width: 20px;
+  height: 20px;
   border: 1px solid green;
+}
+
+.footer-social {
+  margin-left: -10px;
 }
 
 .footer-social,
@@ -479,7 +489,7 @@ li {
 }
 
 .footer-social-item {
-  margin-right: 30px;
+  margin: 10px;
 }
 
 /* Блок с фильтрами */
