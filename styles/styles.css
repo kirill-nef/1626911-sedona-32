@@ -518,7 +518,15 @@ li {
 }
 
 .catalog-filter-item {
-  padding-bottom: 13px;
+  margin: 13px 0;
+}
+
+.catalog-filter-item:first-child {
+  margin-top: 0;
+}
+
+.catalog-filter-item:last-child {
+  margin-bottom: 0;
 }
 
 .catalog-filter-price {
