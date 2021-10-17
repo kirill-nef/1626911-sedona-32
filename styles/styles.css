@@ -184,7 +184,6 @@ ul {
 .navigation {
   display: flex;
   justify-content: space-between;
-  width: 1058px;
   min-height: 65px;
   margin: 0 auto 0px auto;
 }
