@@ -538,7 +538,7 @@ li {
 }
 
 .catalog-filter-input {
-  width: 144px;
+  width: 70px;
 }
 
 .catalog-filter-button {
@@ -574,6 +574,11 @@ li {
   width: 100%;
 }
 
+.sort-block-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .sort-text-search {
   font-size: 30px;
   line-height: 39px;
@@ -584,6 +589,27 @@ li {
 
 .sort-block-align {
   align-items: center;
+}
+
+.select-control {
+  display: block;
+  padding: 12px 70px 12px 19px;
+
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.button-sort {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+
+  border: 1px solid green;
+}
+
+.button-sort:last-child {
+  margin-right: 0;
 }
 
 /* Блок с карточками гостиниц  */
