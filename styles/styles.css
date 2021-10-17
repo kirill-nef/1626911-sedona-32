@@ -474,7 +474,7 @@ li {
 /* ---------------------------------------- */
 
 .inner-header-title {
-  margin: 35px 0 5px;
+  margin-bottom: 5px;
 
   font-size: 60px;
   line-height: 78px;
@@ -484,6 +484,7 @@ li {
 
 .filter {
   display: flex;
+  padding-top: 35px;
 
   color: #ffffff;
 
