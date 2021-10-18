@@ -26,7 +26,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
+  width: 1200px;
   min-height: 100%;
   margin: 0 auto;
 
@@ -238,6 +238,8 @@ ul {
 /* Блок WELCOME */
 /* ---------------------------------------- */
 .welcome {
+  padding: 51px 0 82px;
+
   text-align: center;
   color: #ffffff;
 
@@ -259,7 +261,7 @@ ul {
 }
 
 .welcome-suptitle {
-  margin: 23px 0;
+  margin: 0 0 5px;
 
   font-size: 22px;
   line-height: 36px;
@@ -267,11 +269,11 @@ ul {
 }
 
 .welcome-logo {
-  margin: 51px auto 82px;
+  margin: 0 auto;
 }
 
 .welcome-text {
-  padding-top: 63px;
+  padding: 63px 0;
   margin: 0 auto;
   width: 720px;
 }
@@ -287,10 +289,6 @@ ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.description {
-  padding-top: 56px;
 }
 
 .description-card {
@@ -309,7 +307,7 @@ ul {
 }
 
 .description-title {
-  margin: 0 auto;
+  margin: 0 auto 25px;
   width: 172px;
 
   font-size: 24px;
@@ -319,8 +317,12 @@ ul {
 }
 
 .description-suptitle {
-  margin: 25px auto 0;
+  margin: auto 0 25px;
   line-height: 21px;
+}
+
+.description-suptitle:last-child {
+  margin-bottom: 0;
 }
 
 .description-suptitle-w170 {
@@ -371,7 +373,7 @@ li {
 /* Блок поиска гостинниц */
 /* ---------------------------------------- */
 .search {
-  padding-top: 91px;
+  padding: 91px 0;
   width: 720px;
   margin: 0 auto;
 
@@ -379,7 +381,7 @@ li {
 }
 
 .search-title {
-  margin: 0 15px;
+  margin-bottom: 15px;
 
   font-size: 30px;
   line-height: 36px;
@@ -388,15 +390,11 @@ li {
 }
 
 .search-subtitle {
-  margin: 15px 0 73px;
+  margin: 0 0 73px;
 
   font-size: 22px;
   line-height: 26px;
   color: #333333;
-}
-
-.search-link {
-  margin: 73px 0 91px;
 }
 
 /* Блок подписки на рассылку */
@@ -404,7 +402,7 @@ li {
 .mailing {
   display: inline-block;
   width: 100%;
-  padding-top: 94px;
+  padding: 94px 0;
 
   text-align: center;
   color: #ffffff;
@@ -414,7 +412,7 @@ li {
 }
 
 .mailing-mod {
-  padding-top: 94px;
+  padding: 64px 0 94px;
   text-align: center;
   color: #000000;
 }
@@ -429,7 +427,7 @@ li {
 }
 
 .mailing-subtitle {
-  margin: 15px 0 26px;
+  margin: 0 auto 26px;
 
   font-size: 22px;
   line-height: 26px;
@@ -448,7 +446,7 @@ li {
 }
 
 .mailing-form {
-  margin: 26px auto 94px;
+  margin: 26px auto 0;
   display: flex;
   width: 800px;
 }
@@ -533,7 +531,7 @@ li {
 
 .filter {
   display: flex;
-  padding-top: 35px;
+  padding: 35px 0 86px;
 
   color: #ffffff;
 
@@ -568,7 +566,7 @@ li {
 }
 
 .catalog-filter {
-  margin: 45px auto 86px;
+  margin: 0 auto;
   display: flex;
 
   justify-content: space-between;
@@ -670,20 +668,17 @@ li {
 
 /* Блок с карточками гостиниц  */
 /* ---------------------------------------- */
-.hotels-list {
-  padding-top: 30px;
-}
 
 .hotels-card {
   display: flex;
-  margin-top: 30px;
+  margin-bottom: 30px;
   padding-bottom: 30px;
 
   border-bottom: 1px solid #e6e6e6;
 }
 
-.hotels-card:first-child {
-  margin-top: 0;
+.hotels-card:last-child {
+  margin-bottom: 0;
 }
 
 .hotels-card-title {
@@ -756,8 +751,9 @@ li {
 
 /* Блок со страницами */
 /* ---------------------------------------- */
+
 .page-num {
-  padding-top: 30px;
+  padding: 30px 0;
   display: flex;
   justify-content: space-between;
 }
