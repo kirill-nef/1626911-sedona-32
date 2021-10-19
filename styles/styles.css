@@ -286,24 +286,23 @@ ul {
 }
 
 .card {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
 }
 
 .description-card {
   display: flex;
   align-items: center;
-
-  width: 400px;
-  height: 100%;
-
   text-align: center;
 }
 
 .description-photo {
   display: block;
   width: 800px;
+}
+
+.description-image {
+  grid-column: span 2;
 }
 
 .description-title {
