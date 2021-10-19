@@ -618,7 +618,6 @@ li {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  border-bottom: 1px solid #e6e6e6;
 
   align-items: center;
   padding: 50px 0 45px;
@@ -675,6 +674,11 @@ li {
   padding-bottom: 30px;
 
   border-bottom: 1px solid #e6e6e6;
+}
+
+.hotels-card:first-child {
+  padding-top: 30px;
+  border-top: 1px solid #e6e6e6;
 }
 
 .hotels-card:last-child {
