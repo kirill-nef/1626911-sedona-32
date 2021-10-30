@@ -729,6 +729,10 @@ li {
   margin-top: auto;
 }
 
+.hotels-buttons .button + .button {
+  margin-left: 4px;
+}
+
 .hotels-card-status {
   flex-direction: column;
   display: flex;
