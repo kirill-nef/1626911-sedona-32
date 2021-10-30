@@ -74,38 +74,18 @@ ul {
 /* Кнопки */
 /* ---------------------------------------- */
 
-/* Для тегов a */
-.button-a {
+.button {
   display: inline-block;
   width: 160px;
 
   padding: 10px 0;
 
+  font-weight: 700;
   font-size: 16px;
   line-height: 21px;
-  font-weight: 700;
   text-align: center;
+  text-transform: uppercase;
   text-decoration: none;
-  text-transform: uppercase;
-  color: #ffffff;
-
-  background-color: #756257;
-
-  cursor: pointer;
-}
-
-/* Для тегов button */
-.button-b {
-  display: inline-block;
-  width: 160px;
-
-  padding: 10px 0;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
   border: none;
   background-color: #83b3d3;
   color: #ffffff;
@@ -121,6 +101,11 @@ ul {
 /* Смена цвета кнопки */
 .button-green {
   background-color: #7db54f;
+}
+
+/* Смена цвета кнопки */
+.button-brown {
+  background-color: #756257;
 }
 
 /* Широкая "Загрузить еще из блока быбора отелей" "Поиск гостиницы в Седоне" */
