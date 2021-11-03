@@ -187,6 +187,10 @@ ul {
   outline: none;
 }
 
+.navigation-item-right .button-brown:focus-visible {
+  box-shadow: 0 0 0 3px #83b3d3;
+}
+
 /* Для кнопки "Применить" в блоке фильтров  */
 .button-filter {
   margin-left: auto;
