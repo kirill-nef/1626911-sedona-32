@@ -135,8 +135,9 @@ ul {
 }
 
 .button-mailing:focus-visible {
+  position: relative;
   background-color: #68a2ca;
-  box-shadow: inset 0 0 0 3px #615048;
+  box-shadow: 0 0 0 3px #615048;
   outline: none;
 }
 
@@ -303,7 +304,7 @@ ul {
   position: relative;
 
   display: block;
-  padding: 19px 17px 20px 17px;
+  padding: 10px 17px;
 
   font-size: 20px;
   line-height: 26px;
@@ -319,8 +320,8 @@ ul {
 .navigation-link-current:before {
   position: absolute;
   right: 17px;
-  left: 18px;
-  bottom: -1px;
+  left: 17px;
+  bottom: -11px;
   height: 2px;
 
   background-color: #756257;
@@ -487,6 +488,7 @@ ul {
 .card-item {
   min-height: 384px;
   position: relative;
+  box-sizing: border-box;
 }
 
 .card {
@@ -563,14 +565,17 @@ ul {
   margin: 0 auto 20px;
 }
 
-.card-icon-home::before {
+.card-icon-common {
+  padding-top: 100px;
+}
+
+.card-icon-common::before {
   position: absolute;
 
   content: '';
   width: 76px;
   height: 76px;
 
-  background-image: url(../images/card-index/icon-home.svg);
   background-repeat: no-repeat;
   background-position: bottom;
 
@@ -578,56 +583,24 @@ ul {
 
   left: 50%;
   top: 86px;
+}
+
+.card-icon-home::before {
+  background-image: url(../images/card-index/icon-home.svg);
 }
 
 .card-icon-food::before {
-  position: absolute;
-
-  content: '';
-  width: 76px;
-  height: 76px;
-
   background-image: url(../images/card-index/icon-food.svg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-
-  transform: translateX(-50%);
-
-  left: 50%;
-  top: 86px;
 }
 
 .card-icon-gift::before {
-  position: absolute;
-
-  content: '';
-  width: 76px;
-  height: 76px;
-
   background-image: url(../images/card-index/icon-gift.svg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-
-  transform: translateX(-50%);
-
-  left: 50%;
-  top: 86px;
-}
-
-.card-icon-food .card-text {
-  padding-top: 76px;
 }
 
 .card-text {
   padding: 50px 0;
   display: inline-block;
   margin: 0 auto;
-}
-
-.card-icon-home,
-.card-icon-food,
-.card-icon-gift {
-  padding-top: 150px;
 }
 
 li {
@@ -716,22 +689,22 @@ li {
 }
 
 .mailing-field:focus {
+  position: relative;
   background-color: #e6e6e6;
-  outline: 3px solid #83b3d3;
-  box-shadow: inset 0 0 0 3px red;
-  border: 3px solid purple;
+  box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
 }
 
+/* Тут не смог разобраться */
 .mailing-field:active {
   background-color: #ffffff;
-
-  /* border-color: #000000;
-  outline: none; */
+  color: #000000;
+  box-shadow: inset 0 0 0 2px #000000;
 }
 
-.mailing-field:invalid {
-  /* border-color: #ff5757;
-  outline: none; */
+.mailing-field-invalid {
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 2px #ff5757;
 }
 
 .mailing-form {
