@@ -1202,7 +1202,7 @@ li {
   margin-top: auto;
 }
 
-.hotels-buttons .button + .button {
+.button-beside + .button-beside {
   margin-left: 4px;
 }
 
