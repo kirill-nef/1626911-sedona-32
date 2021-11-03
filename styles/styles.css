@@ -100,22 +100,22 @@ ul {
 
 /* Широкая "Загрузить еще из блока быбора отелей" "Поиск гостиницы в Седоне" */
 .button-wide {
-  padding: 13px 0 17px;
+  padding: 15px 0;
   width: 575px;
 
   font-size: 20px;
   line-height: 36px;
 
-  background-color: #83b3d3;
   border-radius: 10px;
 }
 
-.button-wide:hover {
-  background-color: #68a2ca;
+.button-blue.button-wide:focus-visible {
+  box-shadow: 0 0 0 3px #615048;
+  outline: none;
 }
 
-.button-wide:focus-visible {
-  box-shadow: inset 0 0 0 3px #615048;
+.button-brown.button-wide:focus-visible {
+  box-shadow: 0 0 0 3px #83b3d3;
   outline: none;
 }
 
@@ -148,12 +148,15 @@ ul {
 
 .button-blue:hover {
   background-color: #68a2ca;
+}
+
+.button-blue.button-card:hover {
   box-shadow: inset 0 0 0 1px #615048;
 }
 
-.button-blue:focus-visible {
+.button-blue.button-card:focus-visible {
   background-color: #68a2ca;
-  box-shadow: inset 0 0 0 3px #615048;
+  box-shadow: 0 0 0 3px #615048;
   outline: none;
 }
 
@@ -166,9 +169,9 @@ ul {
   background-color: #6c9e42;
 }
 
-.button-green:focus-visible {
+.button-green.button-card:focus-visible {
   background-color: #6c9e42;
-  box-shadow: inset 0 0 0 3px #615048;
+  box-shadow: 0 0 0 3px #615048;
   outline: none;
 }
 
@@ -181,9 +184,9 @@ ul {
   background-color: #615048;
 }
 
-.button-brown:focus-visible {
+.button-brown.button-card:focus-visible {
   background-color: #615048;
-  box-shadow: inset 0 0 0 3px #83b3d3;
+  box-shadow: 0 0 0 3px #83b3d3;
   outline: none;
 }
 
@@ -256,7 +259,7 @@ ul {
 .button-mini:focus-visible {
   background-color: #68a2ca;
 
-  box-shadow: inset 0 0 0 3px #615048;
+  box-shadow: 0 0 0 3px #615048;
   outline: none;
 }
 
@@ -426,6 +429,10 @@ ul {
 
 .logo-link {
   margin-bottom: -9px;
+}
+
+.logo-link:hover {
+  opacity: 0.9;
 }
 
 /* Блок WELCOME */
@@ -948,7 +955,7 @@ li {
 
 /* Хлебные крошки */
 .breadcrumbs {
-  margin: 5px 0 45px;
+  margin: 5px 0 45px -2px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -961,12 +968,14 @@ li {
 }
 
 .breadcrumbs-item-icon {
+  display: flex;
+  align-items: center;
   position: relative;
 }
 
 .breadcrumbs-item::before {
   position: absolute;
-  left: 22px;
+  left: 33px;
   top: 7px;
 
   width: 6px;
@@ -980,7 +989,13 @@ li {
 }
 
 .breadcrumbs-icon {
+  display: block;
   fill: #ffffff;
+}
+
+.breadcrumbs-link {
+  border-radius: 4px;
+  padding: 4px 5px 5px;
 }
 
 .breadcrumbs-link:hover {
@@ -1121,6 +1136,7 @@ li {
 }
 
 .hotels-card-title {
+  width: fit-content;
   font-size: 24px;
   line-height: 31px;
   font-weight: 700;
@@ -1144,10 +1160,16 @@ li {
 }
 
 .hotels-card-link {
+  width: fit-content;
   text-decoration: none;
+
+  border-radius: 10px;
+  padding: 5px;
+  margin: -5px;
 }
 
-.hotels-card-link:hover .hotels-card-title {
+.hotels-card-link:hover .hotels-card-title,
+.hotels-card-link:focus-visible .hotels-card-title {
   color: #756257;
 }
 
@@ -1169,7 +1191,8 @@ li {
 }
 
 .hotels-card-image:focus-visible {
-  outline: 3px solid #83b3d3;
+  box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
 }
 
 .hotels-card-image:active .hotels-image {
@@ -1206,7 +1229,7 @@ li {
   margin-top: auto;
 }
 
-.button-beside + .button-beside {
+.button-card + .button-card {
   margin-left: 4px;
 }
 
