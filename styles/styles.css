@@ -184,14 +184,10 @@ ul {
   background-color: #615048;
 }
 
-.button-brown.button-card:focus-visible {
+.button-brown:focus-visible {
   background-color: #615048;
   box-shadow: 0 0 0 3px #83b3d3;
   outline: none;
-}
-
-.navigation-item-right .button-brown:focus-visible {
-  box-shadow: 0 0 0 3px #83b3d3;
 }
 
 /* Для кнопки "Применить" в блоке фильтров  */
@@ -205,7 +201,7 @@ ul {
 }
 
 .button-filter:focus-visible {
-  box-shadow: inset 0 0 0 3px #ffffff;
+  box-shadow: 0 0 0 3px #ffffff;
   outline: none;
 }
 
