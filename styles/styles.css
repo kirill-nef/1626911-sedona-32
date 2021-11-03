@@ -312,6 +312,8 @@ ul {
   color: inherit;
 
   cursor: pointer;
+
+  border-radius: 10px;
 }
 
 .navigation-link-current:before {
@@ -349,6 +351,8 @@ ul {
   padding: 19px 17px 20px 17px;
 
   cursor: pointer;
+
+  border-radius: 10px;
 }
 
 .navigation-icon {
@@ -423,7 +427,6 @@ ul {
 /* ---------------------------------------- */
 .welcome {
   position: relative;
-
   padding: 51px 0 82px;
 
   text-align: center;
@@ -434,6 +437,20 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.welcome::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 57px;
+
+  background-image: url('../images/backgrounds/bottom-background.svg');
+  background-repeat: no-repeat;
+
+  content: '';
 }
 
 .welcome-title {
@@ -464,22 +481,12 @@ ul {
   width: 720px;
 }
 
-.welcome-decor-bottom {
-  position: absolute;
-  bottom: 0;
-
-  background-image: url('../images/backgrounds/bottom-background.svg');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  width: 100%;
-  height: 57px;
-}
-
 /* Блок Карточек */
 /* ---------------------------------------- */
 
 .card-item {
   min-height: 384px;
+  position: relative;
 }
 
 .card {
@@ -556,28 +563,71 @@ ul {
   margin: 0 auto 20px;
 }
 
-.card-icon-home {
+.card-icon-home::before {
+  position: absolute;
+
+  content: '';
+  width: 76px;
+  height: 76px;
+
   background-image: url(../images/card-index/icon-home.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
+
+  transform: translateX(-50%);
+
+  left: 50%;
+  top: 86px;
 }
 
-.card-icon-food {
+.card-icon-food::before {
+  position: absolute;
+
+  content: '';
+  width: 76px;
+  height: 76px;
+
   background-image: url(../images/card-index/icon-food.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
+
+  transform: translateX(-50%);
+
+  left: 50%;
+  top: 86px;
 }
 
-.card-icon-gift {
+.card-icon-gift::before {
+  position: absolute;
+
+  content: '';
+  width: 76px;
+  height: 76px;
+
   background-image: url(../images/card-index/icon-gift.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
+
+  transform: translateX(-50%);
+
+  left: 50%;
+  top: 86px;
+}
+
+.card-icon-food .card-text {
+  padding-top: 76px;
 }
 
 .card-text {
   padding: 50px 0;
   display: inline-block;
   margin: 0 auto;
+}
+
+.card-icon-home,
+.card-icon-food,
+.card-icon-gift {
+  padding-top: 150px;
 }
 
 li {
@@ -667,21 +717,21 @@ li {
 
 .mailing-field:focus {
   background-color: #e6e6e6;
-
-  box-shadow: inset 0 0 0 3px #83b3d3;
-  outline: none;
+  outline: 3px solid #83b3d3;
+  box-shadow: inset 0 0 0 3px red;
+  border: 3px solid purple;
 }
 
 .mailing-field:active {
   background-color: #ffffff;
 
-  box-shadow: inset 0 0 0 3px #000000;
-  outline: none;
+  /* border-color: #000000;
+  outline: none; */
 }
 
 .mailing-field:invalid {
-  box-shadow: inset 0 0 0 3px #ff5757;
-  outline: none;
+  /* border-color: #ff5757;
+  outline: none; */
 }
 
 .mailing-form {
@@ -703,7 +753,7 @@ li {
 /* ---------------------------------------- */
 
 .page-footer {
-  padding: 40px 0;
+  padding: 26px 0;
 }
 
 .footer-content {
@@ -716,7 +766,7 @@ li {
 
 .footer-contacts-phone {
   display: block;
-  padding: 10px 2px;
+  padding: 14px 2px;
 
   font-style: normal;
   font-size: 40px;
@@ -724,6 +774,8 @@ li {
   text-align: center;
   text-decoration: none;
   color: #000000;
+
+  border-radius: 10px;
 }
 
 .footer-contacts-phone:hover {
@@ -752,11 +804,13 @@ li {
   position: relative;
 
   display: block;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   padding: 10px;
 
   cursor: pointer;
+
+  border-radius: 10px;
 }
 
 .footer-social {
@@ -772,6 +826,10 @@ li {
   float: right;
 
   cursor: pointer;
+
+  border-radius: 10px;
+
+  margin-right: -15px;
 }
 
 .footer-icon {
@@ -804,8 +862,7 @@ li {
 }
 
 .copyright-icon {
-  padding: 5px;
-  margin: auto;
+  padding: 15px;
 
   fill: #000000;
 }
