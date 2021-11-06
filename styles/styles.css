@@ -36,6 +36,8 @@ body {
   color: #000000;
 
   background-color: #ffffff;
+
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -682,8 +684,7 @@ li {
   padding: 0 0 0 22px;
   width: 578px;
   min-height: 60px;
-
-  font-size: 18px;
+  font: inherit;
   line-height: 26px;
 
   background-color: #f2f2f2;
@@ -892,7 +893,7 @@ li {
 .catalog-filter-check {
   display: block;
   padding: 0;
-  justify-content: space-between;
+  margin: 0;
 
   border: none;
 }
@@ -902,21 +903,54 @@ li {
 }
 
 .catalog-filter-check:nth-child(2) {
-  width: 317px;
+  width: 318px;
 }
 
 .catalog-filter-check:nth-child(3) {
-  width: 317px;
+  width: 287px;
 }
 
 .catalog-filter-check:nth-child(4) {
-  width: 211px;
+  width: 251px;
 }
 
 .catalog-filter {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+}
+
+.catalog-filter-label {
+  position: relative;
+  width: 144px;
+}
+
+.catalog-filter-label:hover {
+  z-index: 2;
+}
+
+.catalog-filter-label-l {
+  margin-right: -1px;
+}
+
+.catalog-filter-label-r {
+  margin-left: -1px;
+  border-radius: 0 4px 4px 0;
+}
+
+.catalog-filter-label::after {
+  position: absolute;
+  right: 16px;
+  top: 10px;
+  color: #aaaaaa;
+}
+
+.catalog-filter-label-l:after {
+  content: 'от';
+}
+
+.catalog-filter-label-r:after {
+  content: 'до';
 }
 
 .catalog-filter-title {
@@ -929,10 +963,69 @@ li {
 
 .catalog-filter-item {
   margin-bottom: 13px;
+  width: fit-content;
 }
 
 .catalog-filter-item:last-child {
   margin-bottom: 0;
+}
+
+.control {
+  display: flex;
+  cursor: pointer;
+}
+
+.control:hover > .control-mark-chekbox {
+  background-color: #ffffff60;
+}
+
+.control:active > .control-mark-chekbox {
+  background-color: #ffffff30;
+}
+
+.control-input:focus-visible + .control-mark {
+  box-shadow: 0 0 0 3px #83b3d3;
+}
+
+.control-mark {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  margin-top: 2px;
+  margin-right: 19px;
+  cursor: pointer;
+}
+.control-mark-chekbox {
+  border-radius: 4px;
+}
+
+.control-mark-radio {
+  border-radius: 50%;
+}
+
+.control-input[type='checkbox']:checked + .control-mark::before {
+  position: absolute;
+  content: '';
+  background-image: url(../images/other/checked.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.control-input[type='radio']:checked + .control-mark::before {
+  position: absolute;
+  content: '';
+
+  left: 5px;
+  top: 5px;
+
+  background-color: #3f5e72;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
 }
 
 .catalog-filter-button {
@@ -940,13 +1033,115 @@ li {
 }
 
 .catalog-filter-input {
-  width: 70px;
+  font: inherit;
+  width: 100%;
+  height: 48px;
+  padding: 0 42px 0 19px;
+  background-color: transparent;
+  color: #ffffff;
+  box-sizing: border-box;
+
+  border: 2px solid #ffffff;
+
+  appearance: textfield;
+}
+
+.catalog-filter-input-l {
+  border-radius: 4px 0 0 4px;
+}
+
+.catalog-filter-input-r {
+  border-radius: 0 4px 4px 0;
+}
+
+.catalog-filter-input:hover {
+  border-color: #aaaaaa;
+}
+
+.catalog-filter-input:focus-visible {
+  position: relative;
+  z-index: 1;
+  box-shadow: inset 0px 0px 0px 3px #81b3d2, 0px 0px 0px 3px #81b3d2;
+  outline: none;
+  border-color: #ffffff;
+}
+
+.catalog-filter-input:active {
+  background-color: #756257;
+  border-color: #ffffff;
+  box-shadow: none;
+  outline: none;
+}
+
+.catalog-filter-input::-webkit-outer-spin-button,
+.catalog-filter-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .catalog-filter-button {
   margin-top: 60px;
 
   text-align: end;
+}
+
+.catalog-filter-price {
+  margin-bottom: 32px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.range-scale {
+  position: relative;
+
+  height: 4px;
+
+  background-color: #ffffff30;
+}
+
+.range-bar {
+  position: absolute;
+
+  height: 4px;
+
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -8px;
+
+  width: 20px;
+  height: 20px;
+
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  outline: 3px solid transparent;
+
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:focus-visible {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  outline: 3px solid #83b3d3;
+}
+
+.range-toggle:active {
+  outline: 2px solid #83b3d3;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.toggle-min {
+  left: 0px;
+}
+
+.toggle-max {
+  right: 0px;
 }
 
 /* Хлебные крошки */
@@ -1047,10 +1242,9 @@ li {
 
 .select-control {
   display: block;
-  padding: 13px 70px 14px 19px;
+  padding: 11px 70px 12px 19px;
 
-  font-size: 18px;
-  line-height: 23px;
+  font: inherit;
 
   border: 2px solid #e6e6e6;
   border-radius: 4px;
@@ -1278,8 +1472,9 @@ li {
 .quantity-select {
   width: 160px;
   height: 48px;
-
   padding-left: 17px;
+
+  font: inherit;
 
   border: 2px solid #e6e6e6;
   border-radius: 4px;

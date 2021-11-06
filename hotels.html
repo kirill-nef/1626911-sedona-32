@@ -103,22 +103,22 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="swimming-pool" checked>
-                  <span class="control-mark"></span>
+                  <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
+                  <span class="control-mark control-mark-chekbox"></span>
                   <span class="control-label">Бассейн</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="parking" checked>
-                  <span class="control-mark"></span>
+                  <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                  <span class="control-mark control-mark-chekbox"></span>
                   <span class="control-label">Парковка</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="wi-fi">
-                  <span class="control-mark"></span>
+                  <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                  <span class="control-mark control-mark-chekbox"></span>
                   <span class="control-label">Wi-Fi</span>
                 </label>
               </li>
@@ -130,22 +130,22 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="hotel-group" value="hotel" checked>
-                  <span class="control-mark"></span>
+                  <input class="visually-hidden1 control-input" type="radio" name="hotel-group" value="hotel" checked>
+                  <span class="control-mark control-mark-radio"></span>
                   <span class="control-label">Гостиница</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="hotel-group" value="motel">
-                  <span class="control-mark"></span>
+                  <input class="visually-hidden1 control-input" type="radio" name="hotel-group" value="motel">
+                  <span class="control-mark control-mark-radio"></span>
                   <span class="control-label">Мотель</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="hotel-group" value="appartaments">
-                  <span class="control-mark"></span>
+                  <input class="visually-hidden1 control-input" type="radio" name="hotel-group" value="appartaments">
+                  <span class="control-mark control-mark-radio"></span>
                   <span class="control-label">Аппартаменты</span>
                 </label>
               </li>
@@ -154,21 +154,30 @@
           <!-- Фильтр - Стоимость, ₽: -->
           <fieldset class="catalog-filter-check">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-            <div>
-              <label class="catalog-filter-label">
-                от <input class="catalog-filter-input" type="number" name="min-price" placeholder="0">
-              </label>
-              <label class="catalog-filter-label">
-                до <input class="catalog-filter-input" type="number" name="max-price" placeholder="9000">
-              </label>
-            </div>
-            <div>
-              <button class="range-toggle toggle-min" type="button">
-                <span class="visually-hidden">Изменить минимальную цену.</span>
-              </button>
-              <button class="range-toggle toggle-max" type="button">
-                <span class="visually-hidden">Изменить максимальную цену.</span>
-              </button>
+
+            <div class="range">
+
+              <div class="catalog-filter-price">
+                <label class="catalog-filter-label catalog-filter-label-l">
+                  <input class="catalog-filter-input catalog-filter-input-l" type="number" name="min-price" value="0">
+                </label>
+                <label class="catalog-filter-label catalog-filter-label-r">
+                  <input class="catalog-filter-input catalog-filter-input-r" type="number" name="max-price"
+                    value="9000">
+                </label>
+              </div>
+
+              <div class="range-scale">
+                <div class="range-bar" style="left: 0px; right: 51px">
+                  <button class="range-toggle toggle-min" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle toggle-max" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
+              </div>
+
             </div>
           </fieldset>
           <!-- Кнопки -->
@@ -422,7 +431,7 @@
         <p class="mailing-email"></p>
         <label class="visually-hidden" for="mailing-form-mail">Email</label>
         <input class="mailing-field" type="email" id="mailing-form-mail" name="mailing-form-mail"
-          placeholder="Ваш e-mail">
+          placeholder="Ваш e-mail" required>
         </p>
         <button class="button button-mailing" type="submit">Подписаться</button>
       </form>
