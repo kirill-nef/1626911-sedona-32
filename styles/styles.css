@@ -940,6 +940,7 @@ li {
 
 .catalog-filter-label::after {
   position: absolute;
+  z-index: 1;
   right: 16px;
   top: 10px;
   color: #aaaaaa;
@@ -1058,7 +1059,7 @@ li {
   border-color: #aaaaaa;
 }
 
-.catalog-filter-input:focus-visible {
+.catalog-filter-input:focus {
   position: relative;
   z-index: 1;
   box-shadow: inset 0px 0px 0px 3px #81b3d2, 0px 0px 0px 3px #81b3d2;
@@ -1075,7 +1076,7 @@ li {
 
 .catalog-filter-input::-webkit-outer-spin-button,
 .catalog-filter-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
   margin: 0;
 }
 
