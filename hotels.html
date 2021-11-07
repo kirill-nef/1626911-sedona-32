@@ -159,11 +159,12 @@
 
               <div class="catalog-filter-price">
                 <label class="catalog-filter-label catalog-filter-label-l">
-                  <input class="catalog-filter-input catalog-filter-input-l" type="number" name="min-price" value="0">
+                  <input class="catalog-filter-input catalog-filter-input-l" type="number" max="29999" min="0"
+                    name="min-price" value="0">
                 </label>
                 <label class="catalog-filter-label catalog-filter-label-r">
-                  <input class="catalog-filter-input catalog-filter-input-r" type="number" name="max-price"
-                    value="9000">
+                  <input class="catalog-filter-input catalog-filter-input-r" type="number" max="30000" min="1"
+                    name="max-price" value="9000">
                 </label>
               </div>
 
@@ -494,6 +495,10 @@
       </section>
     </div>
   </footer>
+
+  <!-- Блок modal-->
+  <!-- ================== -->
+
 </body>
 
 </html>

@@ -102,7 +102,7 @@ ul {
 
 /* Широкая "Загрузить еще из блока быбора отелей" "Поиск гостиницы в Седоне" */
 .button-wide {
-  padding: 15px 0;
+  padding: 12px 0;
   width: 575px;
 
   font-size: 20px;
@@ -278,7 +278,7 @@ ul {
 /* Блок Навигации */
 /* ---------------------------------------- */
 .page-header {
-  z-index: 1000;
+  z-index: 1;
 }
 
 .navigation {
@@ -1257,9 +1257,11 @@ li {
   background-image: url('../images/other/arrow.svg');
   background-repeat: no-repeat;
   background-position: right 16px center;
+
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+
   cursor: pointer;
 }
 
@@ -1489,6 +1491,10 @@ li {
   border-radius: 4px;
   outline: none;
 
+  background-image: url('../images/other/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1500,3 +1506,6 @@ li {
 .quantity-select:focus-visible {
   border-color: #83b3d3;
 }
+
+/* Модальное окно */
+/* ---------------------------------------- */
