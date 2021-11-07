@@ -1291,7 +1291,10 @@ li {
   cursor: pointer;
 }
 
-.button-sort:hover,
+.button-sort:hover {
+  border-color: #83b3d3;
+}
+
 .button-sort:focus-visible {
   border-color: #83b3d3;
 }
