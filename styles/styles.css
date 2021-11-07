@@ -37,7 +37,7 @@ body {
 
   background-color: #ffffff;
 
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 15px #00000020;
 }
 
 .visually-hidden {
@@ -442,7 +442,7 @@ ul {
   text-align: center;
   color: #ffffff;
 
-  background-color: cadetblue;
+  background-color: #68a2ca;
   background-image: url('../images/backgrounds/background.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -595,15 +595,15 @@ ul {
 }
 
 .card-icon-home::before {
-  background-image: url(../images/card-index/icon-home.svg);
+  background-image: url('../images/card-index/icon-home.svg');
 }
 
 .card-icon-food::before {
-  background-image: url(../images/card-index/icon-food.svg);
+  background-image: url('../images/card-index/icon-food.svg');
 }
 
 .card-icon-gift::before {
-  background-image: url(../images/card-index/icon-gift.svg);
+  background-image: url('../images/card-index/icon-gift.svg');
 }
 
 .card-text {
@@ -984,7 +984,7 @@ li {
   background-color: #ffffff30;
 }
 
-.control-input:focus-visible + .control-mark {
+.control-input:focus + .control-mark {
   box-shadow: 0 0 0 3px #83b3d3;
 }
 
@@ -1009,7 +1009,7 @@ li {
 .control-input[type='checkbox']:checked + .control-mark::before {
   position: absolute;
   content: '';
-  background-image: url(../images/other/checked.svg);
+  background-image: url('../images/other/checked.svg');
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
@@ -1250,6 +1250,11 @@ li {
   border: 2px solid #e6e6e6;
   border-radius: 4px;
   outline: none;
+
+  background-image: url('../images/other/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  appearance: none;
 }
 
 .select-control:hover,
@@ -1259,7 +1264,7 @@ li {
 
 .select-control:active {
   color: #333333;
-
+  opacity: 0.3;
   border-color: #e5e5e5;
 }
 
@@ -1326,14 +1331,6 @@ li {
   margin-bottom: 0;
 }
 
-.hotels-card-title {
-  width: fit-content;
-  font-size: 24px;
-  line-height: 31px;
-  font-weight: 700;
-  color: #000000;
-}
-
 .hotels-card-rate {
   display: inline-block;
   width: 160px;
@@ -1352,25 +1349,33 @@ li {
 
 .hotels-card-link {
   width: fit-content;
-  text-decoration: none;
-
-  border-radius: 10px;
-  padding: 5px;
-  margin: -5px;
 }
 
-.hotels-card-link:hover .hotels-card-title,
-.hotels-card-link:focus-visible .hotels-card-title {
+.hotels-card-title:hover {
   color: #756257;
 }
 
-.hotels-card-link:focus-visible {
+.hotels-card-title:focus {
+  color: #756257;
   box-shadow: inset 0 0 0 3px #83b3d3;
   outline: none;
 }
 
 .hotels-card-link:active .hotels-card-title {
   color: #75625730;
+}
+
+.hotels-card-title {
+  width: fit-content;
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 700;
+  color: #000000;
+  border-radius: 10px;
+  padding: 5px;
+  margin: -5px;
+
+  text-decoration: none;
 }
 
 .hotels-image {
