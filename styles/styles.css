@@ -81,6 +81,7 @@ ul {
   width: 160px;
 
   padding: 10px 0;
+  margin: 0;
 
   font-weight: 700;
   font-size: 16px;
@@ -1044,6 +1045,7 @@ li {
 
   border: 2px solid #ffffff;
 
+  -moz-appearance: textfield;
   appearance: textfield;
 }
 
@@ -1516,5 +1518,378 @@ li {
   border-color: #83b3d3;
 }
 
+/* Блок со popover */
+/* ---------------------------------------- */
+
+.popover {
+  position: absolute;
+  width: 400px;
+  min-height: 155px;
+  box-sizing: border-box;
+  padding: 25px 25px 60px;
+
+  top: 56px;
+  transform: translateX(-45%);
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 1px #e5e5e5;
+  border-radius: 20px;
+}
+
+.popover::before {
+  position: absolute;
+  transform: rotate(45deg);
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  left: 186px;
+  top: -10px;
+
+  border-left: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+}
+
+.popover-content {
+  margin-right: -9px;
+}
+
+.popover-image {
+  margin-right: 17px;
+}
+
+.button-popover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 60px;
+  border-radius: 0 0 20px 20px;
+}
+
+.popover-card {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.popover-link {
+  padding: 10px;
+  margin: -10px;
+  border-radius: 10px;
+
+  display: flex;
+  width: fit-content;
+  text-decoration: none;
+
+  color: inherit;
+}
+
+.popover-link:hover {
+  opacity: 0.6;
+}
+
+.popover-link:focus-visible,
+.popover-button-delete:focus-visible {
+  box-shadow: inset 0 0 0 2px #83b3d3;
+  outline: none;
+}
+
+.popover-link:active {
+  opacity: 0.3;
+}
+
+.popover-image {
+  border-radius: 50%;
+  background-color: #68a2ca;
+}
+
+.popover-hotels-type {
+  font-size: 16px;
+}
+
+.popover-button-delete {
+  border-radius: 10px;
+  margin-left: auto;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  width: 48px;
+  height: 48px;
+}
+
+.popover-button-delete:hover svg,
+.popover-button-delete:focus-visible svg {
+  fill: #000000;
+}
+
+.popover-button-delete:active svg {
+  fill: #00000030;
+}
+
 /* Модальное окно */
 /* ---------------------------------------- */
+
+.modal-container {
+  position: fixed;
+  z-index: 2;
+
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+
+  height: 100%;
+
+  background-color: #f2f2f280;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  width: 715px;
+  min-height: 561px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 62px 70px 150px;
+  box-sizing: border-box;
+}
+
+.modal-close-button {
+  position: absolute;
+
+  padding: 0;
+  top: 54px;
+  right: 70px;
+  width: 53px;
+  height: 53px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  border: none;
+
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background-color: #e5e5e5;
+}
+
+.modal-close-button:focus {
+  box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
+}
+
+.modal-close-button:active .modal-close-icon {
+  fill: #aaaaaa;
+}
+
+.modal-close-icon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  margin: auto;
+
+  fill: #000000;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+
+  width: 500px;
+
+  margin-bottom: 55px;
+}
+
+.modal-group {
+  margin-bottom: 10px;
+}
+
+.modal-group-mod {
+  display: flex;
+}
+
+.modal-group-label {
+  width: 155px;
+  min-height: 55px;
+  font-weight: 700;
+  line-height: 51px;
+  cursor: pointer;
+}
+
+.modal-group-label-mini {
+  padding-left: 20px;
+  width: 100px;
+  margin-left: auto;
+}
+
+.modal-info {
+  position: absolute;
+  display: none;
+  top: 58px;
+  left: -33px;
+}
+
+.modal-info-icon {
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #83b3d3;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  line-height: 25px;
+  top: 14px;
+  left: 80px;
+}
+
+.modal-info-icon:hover {
+  background-color: #68a2ca;
+}
+
+.modal-info-icon:hover ~ .modal-info {
+  display: inline;
+}
+
+.modal-popover {
+  position: absolute;
+  width: 256px;
+  background-color: #333333;
+  color: #ffffff;
+
+  font-size: 16px;
+  line-height: 20px;
+  padding: 15px 20px 18px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.modal-info::before {
+  position: absolute;
+  transform: rotate(45deg);
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #333333;
+  left: 115px;
+  top: -10px;
+}
+
+.modal-group-form {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+}
+
+.modal-group-form-mod {
+  margin-left: auto;
+}
+
+.modal-group-comment {
+  margin-left: 155px;
+  width: 420px;
+  font-size: 16px;
+  color: #333333;
+}
+
+.comment-bad {
+  color: #ff5757;
+}
+
+.modal-group-input {
+  width: 420px;
+  cursor: pointer;
+  border-radius: 4px;
+  font: inherit;
+  font-weight: 700;
+  background-color: #f2f2f2;
+  border: none;
+  padding: 0 19px;
+  margin: 0;
+  box-sizing: border-box;
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.modal-group-form:hover .modal-group-input {
+  background-color: #e5e5e5;
+}
+
+.modal-group-input:focus {
+  box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
+}
+
+.modal-group-input[type='text'] {
+  background-image: url('../images/other/date.svg');
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}
+
+.modal-group-input[type='number'] {
+  width: 133px;
+  text-align: center;
+}
+
+.button-modal-number {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  font-size: 30px;
+  font-weight: 400;
+  top: 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+
+  line-height: 0px;
+}
+
+.modal-icon:hover {
+  fill: #000000;
+}
+
+.button-modal-number:focus {
+  box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
+}
+
+.button-modal-number:focus .modal-icon {
+  fill: #000000;
+}
+
+.button-modal-number:active .modal-icon {
+  fill: #dddddd;
+}
+
+.modal-number-minus {
+  right: 95px;
+}
+
+.modal-number-plus {
+  right: 10px;
+}
+
+.modal-group-input::-webkit-outer-spin-button,
+.modal-group-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.modal-button-bottom {
+  position: absolute;
+  bottom: 70px;
+}
