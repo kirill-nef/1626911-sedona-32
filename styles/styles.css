@@ -1683,10 +1683,6 @@ li {
   outline: none;
 }
 
-.modal-close-button:active .modal-close-icon {
-  fill: #aaaaaa;
-}
-
 .modal-close-icon {
   position: absolute;
   left: 0;
@@ -1695,8 +1691,10 @@ li {
   bottom: 0;
 
   margin: auto;
+}
 
-  fill: #000000;
+.modal-close-button:active svg {
+  fill: #00000060;
 }
 
 .modal-title {
@@ -1843,6 +1841,8 @@ li {
 }
 
 .modal-group-input:focus {
+  background-color: #e5e5e5;
+
   box-shadow: 0 0 0 3px #83b3d3;
   outline: none;
 }
@@ -1881,6 +1881,11 @@ li {
   cursor: pointer;
 }
 
+.modal-icon {
+  display: block;
+  margin: auto;
+}
+
 .modal-icon:hover {
   fill: #000000;
 }
@@ -1890,12 +1895,12 @@ li {
   outline: none;
 }
 
-.button-modal-number:focus .modal-icon {
+.button-modal-number:focus svg {
   fill: #000000;
 }
 
-.button-modal-number:active .modal-icon {
-  fill: #dddddd;
+.button-modal-number:active svg {
+  fill: #00000030;
 }
 
 .modal-number-minus {
