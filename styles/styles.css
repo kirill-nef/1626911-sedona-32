@@ -1621,7 +1621,10 @@ li {
   border: none;
 }
 
-.popover-button-delete:hover svg,
+.popover-button-delete:hover svg {
+  fill: #000000;
+}
+
 .popover-button-delete:focus-visible svg {
   fill: #000000;
 }
