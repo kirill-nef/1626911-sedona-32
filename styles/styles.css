@@ -422,6 +422,10 @@ ul {
   color: #637d85;
 }
 
+.navigation-item-right {
+  position: relative;
+}
+
 .navigation-item-right:last-child {
   margin-left: 24px;
 }
@@ -1523,8 +1527,10 @@ li {
 
 .popover {
   position: absolute;
-  top: 56px;
-  transform: translateX(-45%);
+  top: calc(100% + 8px);
+  transform: translate(calc(-50% + 21px));
+
+  display: block;
 
   width: 400px;
   min-height: 155px;
@@ -1536,10 +1542,11 @@ li {
   border-radius: 20px;
 }
 
-.popover::before {
+.popover-content::before {
   position: absolute;
-  left: 186px;
   top: -10px;
+  left: calc(50% - 15px);
+
   transform: rotate(45deg);
 
   content: '';
@@ -1549,10 +1556,6 @@ li {
   background-color: #ffffff;
   border-left: 1px solid #e5e5e5;
   border-top: 1px solid #e5e5e5;
-}
-
-.popover-content {
-  margin-right: -9px;
 }
 
 .popover-image {
@@ -1614,6 +1617,7 @@ li {
   width: 48px;
   height: 48px;
   margin-left: auto;
+  margin-right: -9px;
 
   cursor: pointer;
   background-color: transparent;
@@ -1716,42 +1720,39 @@ li {
 }
 
 .modal-group-label {
+  display: flex;
+  align-items: center;
+
   width: 155px;
   min-height: 55px;
-
   font-weight: 700;
-  line-height: 51px;
+  line-height: 1;
 
   cursor: pointer;
 }
 
 .modal-group-label-mini {
-  padding-left: 20px;
-  width: 100px;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding-left: 10px;
+  text-align: center;
+
+  width: 145px;
   margin-left: auto;
 }
 
-.modal-info {
-  position: absolute;
-  top: 58px;
-  left: -33px;
-
-  display: none;
-}
-
 .modal-info-icon {
-  position: absolute;
-  top: 14px;
-  left: 80px;
-
+  position: relative;
   display: block;
-  width: 25px;
-  height: 25px;
+  min-width: 25px;
+  min-height: 25px;
 
+  margin: 15px;
   color: #ffffff;
   text-align: center;
   font-size: 14px;
   line-height: 25px;
+  font-weight: 400;
 
   border-radius: 50%;
   background-color: #83b3d3;
@@ -1761,19 +1762,23 @@ li {
   background-color: #68a2ca;
 }
 
-.modal-info-icon:hover ~ .modal-info {
+.modal-info-icon:hover > .modal-popover {
   display: inline;
 }
 
 .modal-popover {
   position: absolute;
+  top: calc(100% + 24px);
+  transform: translateX(-50%);
   z-index: 1;
 
+  display: none;
+  box-sizing: border-box;
   width: 256px;
   padding: 15px 20px 18px;
-  box-sizing: border-box;
-  color: #ffffff;
 
+  color: #ffffff;
+  text-align: start;
   font-size: 16px;
   line-height: 20px;
 
@@ -1781,9 +1786,9 @@ li {
   border-radius: 10px;
 }
 
-.modal-info::before {
+.modal-popover::before {
   position: absolute;
-  left: 115px;
+  left: calc(50% - 12px);
   top: -10px;
 
   transform: rotate(45deg);
@@ -1922,4 +1927,9 @@ li {
   position: absolute;
 
   bottom: 70px;
+}
+
+/* Класс для отключения поповеров и модельных окон */
+.class-disable1 {
+  display: none;
 }
