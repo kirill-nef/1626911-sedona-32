@@ -585,6 +585,9 @@ ul {
 
 .card-icon-common::before {
   position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 86px;
 
   content: '';
   width: 76px;
@@ -592,11 +595,6 @@ ul {
 
   background-repeat: no-repeat;
   background-position: bottom;
-
-  transform: translateX(-50%);
-
-  left: 50%;
-  top: 86px;
 }
 
 .card-icon-home::before {
@@ -1547,12 +1545,11 @@ li {
   top: -10px;
   left: calc(50% - 15px);
 
-  transform: rotate(45deg);
-
   content: '';
   width: 20px;
   height: 20px;
 
+  transform: rotate(45deg);
   background-color: #ffffff;
   border-left: 1px solid #e5e5e5;
   border-top: 1px solid #e5e5e5;
@@ -1585,7 +1582,6 @@ li {
   margin: -10px;
 
   color: inherit;
-
   border-radius: 10px;
   text-decoration: none;
 }
@@ -1734,20 +1730,20 @@ li {
 .modal-group-label-mini {
   justify-content: flex-end;
   box-sizing: border-box;
+  margin-left: auto;
   padding-left: 10px;
   text-align: center;
-
   width: 145px;
-  margin-left: auto;
 }
 
 .modal-info-icon {
   position: relative;
+
   display: block;
   min-width: 25px;
   min-height: 25px;
-
   margin: 15px;
+
   color: #ffffff;
   text-align: center;
   font-size: 14px;
@@ -1791,11 +1787,11 @@ li {
   left: calc(50% - 12px);
   top: -10px;
 
-  transform: rotate(45deg);
   width: 20px;
   height: 20px;
 
   content: '';
+  transform: rotate(45deg);
   background-color: #333333;
 }
 
