@@ -1928,6 +1928,6 @@ li {
 }
 
 /* Класс для отключения поповеров и модельных окон */
-.class-disable1 {
+.class-disable {
   display: none;
 }
