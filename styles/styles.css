@@ -284,6 +284,7 @@ ul {
 }
 
 .navigation {
+  position: relative;
   display: flex;
   justify-content: space-between;
   min-height: 65px;
@@ -292,19 +293,24 @@ ul {
 .navigation-list-left {
   display: flex;
   flex-wrap: wrap;
-  width: 420px;
+  width: 475px;
   padding: 0;
   margin-left: -17px;
   align-items: center;
 }
 
+.navigation-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 460px;
+}
+
 .navigation-list-right {
-  padding: 12px 0;
   display: flex;
   flex-wrap: wrap;
-  width: 420px;
   justify-content: flex-end;
-  align-items: center;
+  margin: 10px 0;
 }
 
 .navigation-link {
@@ -423,20 +429,26 @@ ul {
   color: #637d85;
 }
 
+.navigation-item-left {
+  margin: 10px 0;
+}
+
 .navigation-item-right {
   position: relative;
 }
 
-.navigation-item-right:last-child {
-  margin-left: 24px;
-}
-
 .logo-link {
-  margin-bottom: -9px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .logo-link:hover {
   opacity: 0.9;
+}
+
+.navigation-navigation {
+  margin-left: 24px;
 }
 
 /* Блок WELCOME */
