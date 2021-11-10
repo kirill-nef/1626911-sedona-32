@@ -37,7 +37,7 @@ body {
 
   background-color: #ffffff;
 
-  box-shadow: 0px 0px 15px #00000020;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -99,7 +99,7 @@ ul {
 }
 
 .button:active {
-  color: #ffffff30;
+  color: rgba(255, 255, 255, 0.2);
 }
 
 /* Широкая "Загрузить еще из блока быбора отелей" "Поиск гостиницы в Седоне" */
@@ -224,7 +224,7 @@ ul {
 }
 
 .button-reset:hover {
-  color: #ffffff60;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .button-reset:focus-visible {
@@ -264,7 +264,7 @@ ul {
 }
 
 .button-mini:active {
-  color: #ffffff30;
+  color: rgba(255, 255, 255, 0.2);
 
   background-color: #68a2ca;
 }
@@ -354,7 +354,7 @@ ul {
 }
 
 .navigation-link:active {
-  color: #75625730;
+  color: rgba(117, 98, 87, 0.2);
 
   box-shadow: none;
 }
@@ -413,11 +413,11 @@ ul {
 }
 
 .navigation-link-icon:active .navigation-icon {
-  fill: #75625730;
+  fill: rgba(117, 98, 87, 0.2);
 }
 
 .navigation-link-icon:active .navigation-favourits-count {
-  color: #ffffff30;
+  color: rgba(255, 255, 255, 0.2);
 }
 
 .navigation-list-right .navigation-link {
@@ -578,11 +578,11 @@ ul {
 }
 
 .card-type-2 {
-  background-color: #83b3d31f;
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .card-type-3 {
-  background-color: #83b3d333;
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .card-icon {
@@ -787,7 +787,7 @@ li {
 }
 
 .footer-contacts-phone:active {
-  color: #75625730;
+  color: rgba(117, 98, 87, 0.2);
 }
 
 .footer-social-list {
@@ -855,7 +855,7 @@ li {
 }
 
 .footer-button:active .footer-icon {
-  fill: #68a2ca30;
+  fill: rgba(104, 162, 202, 0.2);
 }
 
 .copyright-icon {
@@ -878,7 +878,7 @@ li {
 }
 
 .copyright-button:active .copyright-icon {
-  fill: #75625730;
+  fill: rgba(117, 98, 87, 0.2);
 }
 
 /* Блок с фильтрами */
@@ -993,11 +993,11 @@ li {
 }
 
 .control:hover > .control-mark-chekbox {
-  background-color: #ffffff60;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .control:active > .control-mark-chekbox {
-  background-color: #ffffff30;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .control-input:focus + .control-mark {
@@ -1116,7 +1116,7 @@ li {
 
   height: 4px;
 
-  background-color: #ffffff30;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .range-bar {
@@ -1210,11 +1210,11 @@ li {
 }
 
 .breadcrumbs-link:hover {
-  color: #ffffff60;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .breadcrumbs-link:active {
-  color: #ffffff30;
+  color: rgba(255, 255, 255, 0.2);
 }
 
 .breadcrumbs-link:focus-visible {
@@ -1222,11 +1222,11 @@ li {
 }
 
 .breadcrumbs-link:hover .breadcrumbs-icon {
-  fill: #ffffff60;
+  fill: rgba(255, 255, 255, 0.4);
 }
 
 .breadcrumbs-link:active .breadcrumbs-icon {
-  fill: #ffffff30;
+  fill: rgba(255, 255, 255, 0.2);
 }
 
 /* Блок сортировки  */
@@ -1389,7 +1389,7 @@ li {
 }
 
 .hotels-card-title:active .hotels-card-link {
-  color: #75625730;
+  color: rgba(117, 98, 87, 0.2);
 }
 
 .hotels-card-link {
@@ -1643,7 +1643,7 @@ li {
 }
 
 .popover-button-delete:active svg {
-  fill: #00000030;
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 .popover-hidden {
@@ -1663,7 +1663,7 @@ li {
   width: 100%;
   height: 100%;
 
-  background-color: #f2f2f280;
+  background-color: rgba(242, 242, 242, 0.5);
 }
 
 .modal {
@@ -1714,7 +1714,7 @@ li {
 }
 
 .modal-close-button:active svg {
-  fill: #00000060;
+  fill: rgba(0, 0, 0, 0.4);
 }
 
 .modal-title {
@@ -1921,7 +1921,7 @@ li {
 }
 
 .button-modal-number:active svg {
-  fill: #00000030;
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 .modal-number-minus {
