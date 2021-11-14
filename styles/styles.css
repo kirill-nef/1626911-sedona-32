@@ -1019,6 +1019,7 @@ li {
   display: block;
   width: 20px;
   height: 20px;
+  min-width: 20px;
   background-color: #ffffff;
   margin-top: 2px;
   margin-right: 19px;
@@ -1274,6 +1275,7 @@ li {
   display: block;
   padding: 11px 100px 12px 19px;
   margin-right: 8px;
+  max-width: 350px;
 
   font: inherit;
   color: #333333;
@@ -1430,7 +1432,9 @@ li {
 }
 
 .hotels-card-image {
-  height: fit-content;
+  object-fit: contain;
+  max-width: 180px;
+  max-height: 120px;
 }
 
 .hotels-card-image:hover .hotels-image {
