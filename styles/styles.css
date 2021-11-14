@@ -81,9 +81,10 @@ ul {
   display: inline-block;
   width: 160px;
 
-  padding: 10px 0;
+  padding: 8px 0;
   margin: 0;
 
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
@@ -103,7 +104,7 @@ ul {
 }
 
 /* Широкая "Загрузить еще из блока быбора отелей" "Поиск гостиницы в Седоне" */
-.button-wide {
+.button-wide-head {
   padding: 12px 0;
   width: 575px;
 
@@ -113,12 +114,22 @@ ul {
   border-radius: 10px;
 }
 
-.button-blue.button-wide:focus-visible {
+.button-wide-catalog {
+  padding: 10px 0;
+  width: 625px;
+
+  font-size: 20px;
+  line-height: 36px;
+
+  border-radius: 4px;
+}
+
+.button-blue.button-wide-catalog:focus-visible {
   box-shadow: 0 0 0 3px #615048;
   outline: none;
 }
 
-.button-brown.button-wide:focus-visible {
+.button-brown.button-wide-head:focus-visible {
   box-shadow: 0 0 0 3px #83b3d3;
   outline: none;
 }
@@ -196,6 +207,7 @@ ul {
 
 /* Для кнопки "Применить" в блоке фильтров  */
 .button-filter {
+  padding: 14px 0;
   margin-left: auto;
 }
 
@@ -211,7 +223,7 @@ ul {
 
 /* Для кнопки "Сбросить" в блоке фильтров  */
 .button-reset {
-  margin: 5px 20px 0;
+  margin: 14px 20px;
   width: 120px;
   padding: 5px 0;
 
@@ -235,8 +247,8 @@ ul {
 /* Маленькие кнопки для выбора номера страницы с отелями */
 .button-mini {
   display: inline-block;
-  min-width: 56px;
-  padding: 15px 0;
+  min-width: 35px;
+  padding: 15px 10px;
 
   font-size: 20px;
   line-height: 26px;
@@ -274,7 +286,7 @@ ul {
 .button-mini-inactive:hover {
   color: #000000;
 
-  background-color: #e5e5e5;
+  background-color: #f2f2f2;
   cursor: default;
 }
 
@@ -318,7 +330,7 @@ ul {
   position: relative;
 
   display: block;
-  padding: 10px 17px;
+  padding: 9px 17px 11px;
 
   font-size: 20px;
   line-height: 26px;
@@ -335,7 +347,7 @@ ul {
   position: absolute;
   right: 17px;
   left: 17px;
-  bottom: -11px;
+  bottom: -10px;
   height: 2px;
 
   background-color: #756257;
@@ -431,11 +443,12 @@ ul {
 }
 
 .navigation-item-left {
-  margin: 10px 0;
+  margin: 9px 0;
 }
 
 .navigation-item-right {
   position: relative;
+  margin-right: 6px;
 }
 
 .logo-link {
@@ -449,14 +462,14 @@ ul {
 }
 
 .navigation-navigation {
-  margin-left: 24px;
+  margin-left: 19px;
 }
 
 /* Блок WELCOME */
 /* ---------------------------------------- */
 .welcome {
   position: relative;
-  padding: 51px 0 82px;
+  padding: 51px 0 77px;
 
   text-align: center;
   color: #ffffff;
@@ -465,7 +478,6 @@ ul {
   background-image: url('../images/backgrounds/background.jpg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .welcome::before {
@@ -483,7 +495,7 @@ ul {
 }
 
 .welcome-title {
-  margin-bottom: 23px;
+  margin-bottom: 33px;
 
   font-size: 30px;
   line-height: 36px;
@@ -498,6 +510,7 @@ ul {
   font-size: 22px;
   line-height: 36px;
   text-align: center;
+  color: #333333;
 }
 
 .welcome-logo {
@@ -505,7 +518,7 @@ ul {
 }
 
 .welcome-text {
-  padding: 63px 0;
+  padding: 61px 0 75px;
   margin: 0 auto;
   width: 720px;
 }
@@ -525,8 +538,7 @@ ul {
 }
 
 .description-card {
-  display: flex;
-  align-items: center;
+  padding: 97px 0 50px;
 
   text-align: center;
 }
@@ -542,7 +554,7 @@ ul {
 }
 
 .description-title {
-  margin: 0 auto 25px;
+  margin: 0 auto 29px;
   width: 172px;
 
   font-size: 24px;
@@ -551,10 +563,19 @@ ul {
   text-transform: uppercase;
 }
 
-.description-suptitle {
-  margin: auto 0 25px;
+.description-title-mod {
+  margin-bottom: 18px;
+}
 
+.description-suptitle {
+  margin: auto 0 30px;
+
+  color: #333333;
   line-height: 21px;
+}
+
+.description-suptitle-mod {
+  color: #ffffff;
 }
 
 .description-suptitle:last-child {
@@ -584,25 +605,20 @@ ul {
 }
 
 .card-type-3 {
-  background-color: rgba(131, 179, 211, 0.3);
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
-.card-icon {
-  display: block;
-  width: 75px;
-  height: 75px;
-  margin: 0 auto 20px;
+.desctiption-card-icon {
+  padding-top: 162px;
+
+  text-align: center;
 }
 
-.card-icon-common {
-  padding-top: 100px;
-}
-
-.card-icon-common::before {
+.desctiption-card-icon::before {
   position: absolute;
   transform: translateX(-50%);
   left: 50%;
-  top: 86px;
+  top: 85px;
 
   content: '';
   width: 76px;
@@ -625,9 +641,12 @@ ul {
 }
 
 .card-text {
-  padding: 50px 0;
   display: inline-block;
   margin: 0 auto;
+}
+
+.desctiption-card-icon .card-text {
+  padding: 23px 0 50px;
 }
 
 li {
@@ -645,7 +664,7 @@ li {
 }
 
 .search-title {
-  margin-bottom: 15px;
+  margin-bottom: 29px;
 
   font-size: 30px;
   line-height: 36px;
@@ -654,7 +673,7 @@ li {
 }
 
 .search-subtitle {
-  margin: 0 0 73px;
+  margin: 0 0 59px;
 
   font-size: 22px;
   line-height: 26px;
@@ -666,7 +685,7 @@ li {
 .mailing {
   display: inline-block;
   width: 100%;
-  padding: 94px 0;
+  padding: 93px 0;
 
   text-align: center;
   color: #ffffff;
@@ -678,14 +697,14 @@ li {
 }
 
 .mailing-mod {
-  padding: 64px 0 94px;
+  padding: 49px 0 137px;
 
   text-align: center;
   color: #000000;
 }
 
 .mailing-title {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 
   font-size: 30px;
   line-height: 36px;
@@ -694,7 +713,7 @@ li {
 }
 
 .mailing-subtitle {
-  margin: 0 auto 26px;
+  margin: 0 auto 47px;
 
   font-size: 22px;
   line-height: 26px;
@@ -765,6 +784,10 @@ li {
   align-items: center;
 }
 
+.footer-contacts {
+  margin-bottom: 0px;
+}
+
 .footer-contacts-phone {
   display: block;
   padding: 14px 2px;
@@ -807,7 +830,7 @@ li {
   display: block;
   width: 20px;
   height: 20px;
-  padding: 10px;
+  padding: 11px;
 
   cursor: pointer;
 
@@ -889,17 +912,17 @@ li {
 /* ---------------------------------------- */
 
 .inner-header-title {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 
   font-size: 60px;
-  line-height: 78px;
+  line-height: 66px;
   font-weight: 700;
   color: #ffffff;
 }
 
 .filter {
   display: flex;
-  padding: 35px 0 86px;
+  padding: 39px 0 29px;
 
   color: #ffffff;
 
@@ -910,38 +933,22 @@ li {
   background-size: cover;
 }
 
+.catalog-filter {
+  display: grid;
+  grid-template-columns: 20.5% 29.5% 30% 20%;
+}
+
 .catalog-filter-check {
   display: block;
   padding: 0;
-  margin: 0;
+  margin: 0 0 36px;
   border: none;
-}
-
-.catalog-filter-check:nth-child(1) {
-  width: 211px;
-}
-
-.catalog-filter-check:nth-child(2) {
-  width: 318px;
-}
-
-.catalog-filter-check:nth-child(3) {
-  width: 287px;
-}
-
-.catalog-filter-check:nth-child(4) {
-  width: 251px;
-}
-
-.catalog-filter {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
 }
 
 .catalog-filter-label {
   position: relative;
-  width: 144px;
+  width: 100%;
+  max-width: 144px;
 }
 
 .catalog-filter-label:hover {
@@ -975,6 +982,7 @@ li {
 
 .catalog-filter-title {
   margin-bottom: 30px;
+  padding: 0;
 
   font-size: 20px;
   line-height: 26px;
@@ -1047,15 +1055,11 @@ li {
   height: 10px;
 }
 
-.catalog-filter-button {
-  width: 170px;
-}
-
 .catalog-filter-input {
   font: inherit;
   width: 100%;
   height: 48px;
-  padding: 0 42px 0 19px;
+  padding: 0 42px 0 17px;
   background-color: transparent;
   color: #ffffff;
   box-sizing: border-box;
@@ -1108,7 +1112,7 @@ li {
 }
 
 .catalog-filter-price {
-  margin-bottom: 32px;
+  margin: 5px 0 28px;
   display: flex;
   flex-wrap: nowrap;
 }
@@ -1116,6 +1120,8 @@ li {
 .range-scale {
   position: relative;
 
+  width: 100%;
+  max-width: 287px;
   height: 4px;
 
   background-color: rgba(255, 255, 255, 0.3);
@@ -1168,13 +1174,13 @@ li {
 
 /* Хлебные крошки */
 .breadcrumbs {
-  margin: 5px 0 45px -2px;
+  margin: 0 0 45px -2px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .breadcrumbs-item {
-  margin-right: 26px;
+  margin-right: 15px;
 
   font-size: 16px;
   line-height: 21px;
@@ -1188,7 +1194,7 @@ li {
 
 .breadcrumbs-item::before {
   position: absolute;
-  left: 33px;
+  left: 26px;
   top: 7px;
 
   width: 6px;
@@ -1236,17 +1242,19 @@ li {
 .sort-block {
   display: flex;
   align-items: center;
-  padding: 50px 0 45px;
+  padding: 40px 0 37px;
 }
 
 .sort-block-item {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 50%;
 }
 
 .sort-block-buttons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
 }
 
@@ -1264,9 +1272,11 @@ li {
 
 .select-control {
   display: block;
-  padding: 11px 70px 12px 19px;
+  padding: 11px 100px 12px 19px;
+  margin-right: 8px;
 
   font: inherit;
+  color: #333333;
 
   background-color: transparent;
   border: 2px solid #e6e6e6;
@@ -1302,15 +1312,19 @@ li {
   position: relative;
 
   display: block;
-  width: 48px;
-  height: 48px;
-  margin-right: 8px;
+  width: 45px;
+  height: 45px;
+  margin: 4px;
 
   border: 2px solid #e6e6e6;
   border-radius: 4px;
   outline: none;
 
   cursor: pointer;
+}
+
+.button-sort:nth-child(4) {
+  margin-right: 0;
 }
 
 .button-sort:hover {
@@ -1368,16 +1382,33 @@ li {
   display: inline-block;
   width: 160px;
   margin: auto 0 0;
-  padding: 10px 0;
+  padding: 8px 0;
 
   font-size: 16px;
   line-height: 21px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000000;
+  color: #333333;
 
   background-color: #f2f2f2;
+}
+
+.hotels-card-title {
+  margin-bottom: 5px;
+}
+
+.hotels-card-link {
+  width: fit-content;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  border-radius: 10px;
+  padding: 5px;
+  margin: -5px;
+
+  text-decoration: none;
 }
 
 .hotels-card-link:hover {
@@ -1394,21 +1425,12 @@ li {
   color: rgba(117, 98, 87, 0.3);
 }
 
-.hotels-card-link {
-  width: fit-content;
-  font-size: 24px;
-  line-height: 31px;
-  font-weight: 700;
-  color: #000000;
-  border-radius: 10px;
-  padding: 5px;
-  margin: -5px;
-
-  text-decoration: none;
-}
-
 .hotels-image {
   display: block;
+}
+
+.hotels-card-image {
+  height: fit-content;
 }
 
 .hotels-card-image:hover .hotels-image {
@@ -1454,8 +1476,12 @@ li {
   margin-top: auto;
 }
 
-.button-card + .button-card {
-  margin-left: 4px;
+.button-card {
+  margin-right: 3px;
+}
+
+.button-card:first-child {
+  width: 151px;
 }
 
 .hotels-card-status {
@@ -1463,6 +1489,7 @@ li {
   flex-direction: column;
   min-height: 100%;
   margin-left: auto;
+  padding-top: 3px;
 }
 
 .hotels-download {
@@ -1475,7 +1502,10 @@ li {
 .hotels-block-type {
   display: flex;
   justify-content: space-between;
-  width: 250px;
+  width: 237px;
+  margin-bottom: 25px;
+
+  color: #333333;
 }
 
 /* Блок со страницами */
@@ -1489,10 +1519,11 @@ li {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .pagination-item {
-  margin-right: 8px;
+  margin: 0 8px 8px 0;
 }
 
 .quantity-title {
@@ -1502,15 +1533,19 @@ li {
 .quantity-hotels {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  min-width: 390px;
+  margin-bottom: 11px;
 }
 
 .quantity-select {
   width: 160px;
   height: 48px;
-  padding-left: 17px;
+  padding-left: 14px;
 
   font: inherit;
   background-color: transparent;
+  color: #333333;
 
   border: 2px solid #e6e6e6;
   border-radius: 4px;
@@ -1518,7 +1553,7 @@ li {
 
   background-image: url('../images/other/arrow.svg');
   background-repeat: no-repeat;
-  background-position: right 16px center;
+  background-position: right 20px center;
 
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1590,6 +1625,15 @@ li {
   margin-bottom: 25px;
 }
 
+.popover-card-info {
+  margin-top: 5px;
+}
+
+.popover-card-title {
+  font-size: 18px;
+  line-height: 18px;
+}
+
 .popover-link {
   display: flex;
   width: fit-content;
@@ -1627,8 +1671,7 @@ li {
 .popover-button-delete {
   width: 48px;
   height: 48px;
-  margin-left: auto;
-  margin-right: -9px;
+  margin: -8px -15px 0 auto;
 
   cursor: pointer;
   background-color: transparent;
@@ -1721,16 +1764,16 @@ li {
 
 .modal-title {
   width: 500px;
-  margin-bottom: 55px;
+  margin-bottom: 60px;
 
   font-weight: 700;
   font-size: 30px;
-  line-height: 40px;
+  line-height: 36px;
   text-transform: uppercase;
 }
 
 .modal-group {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .modal-group-mod {
@@ -1764,7 +1807,7 @@ li {
   display: block;
   min-width: 25px;
   min-height: 25px;
-  margin: 15px;
+  margin: 15px 19px 12px 13px;
 
   color: #ffffff;
   text-align: center;
@@ -1786,7 +1829,7 @@ li {
 
 .modal-popover {
   position: absolute;
-  top: calc(100% + 24px);
+  top: calc(100% + 18px);
   transform: translateX(-50%);
   z-index: 1;
 
@@ -1807,7 +1850,7 @@ li {
 .modal-popover::before {
   position: absolute;
   left: calc(50% - 12px);
-  top: -10px;
+  top: -8px;
 
   width: 20px;
   height: 20px;
@@ -1873,7 +1916,7 @@ li {
 .modal-group-input[type='text'] {
   background-image: url('../images/other/date.svg');
   background-repeat: no-repeat;
-  background-position: right 16px center;
+  background-position: right 20px center;
 }
 
 .modal-group-input[type='number'] {
@@ -1904,13 +1947,38 @@ li {
   cursor: pointer;
 }
 
-.modal-icon {
-  display: block;
-  margin: auto;
+.button-modal-number:after {
+  position: absolute;
+  top: 12px;
+  left: 6px;
+
+  width: 13px;
+  height: 1px;
+
+  background-color: #aaaaaa;
+  content: '';
 }
 
-.modal-icon:hover {
-  fill: #000000;
+.modal-number-plus:before {
+  position: absolute;
+  top: 6px;
+  left: 12px;
+
+  width: 1px;
+  height: 13px;
+
+  background-color: #aaaaaa;
+  content: '';
+}
+
+.button-modal-number:hover:after,
+.modal-number-plus:hover:before {
+  background-color: #000000;
+}
+
+.button-modal-number:active:after,
+.modal-number-plus:active:before {
+  background-color: #c5c5c5;
 }
 
 .button-modal-number:focus {
@@ -1944,6 +2012,14 @@ li {
 .modal-button-bottom {
   position: absolute;
   bottom: 70px;
+
+  padding: 12px 0;
+  width: 575px;
+
+  font-size: 20px;
+  line-height: 36px;
+
+  border-radius: 10px;
 }
 
 .modal-close {
