@@ -399,7 +399,8 @@ ul {
   top: 0;
   left: 21px;
 
-  width: 19px;
+  min-width: 19px;
+  max-width: 22px;
   height: 19px;
 
   font-size: 10px;
@@ -410,6 +411,9 @@ ul {
 
   border-radius: 50%;
   background-color: #7db550;
+
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .navigation-link-icon:hover .navigation-icon {
