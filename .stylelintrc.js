@@ -24,8 +24,8 @@ module.exports = {
     'string-no-newline': true,
     'unit-no-unknown': true,
 
-    'font-family-no-missing-generic-family-keyword' : true,
-    'no-descending-specificity' : null,
+    'font-family-no-missing-generic-family-keyword': true,
+    'no-descending-specificity': null,
 
     'color-hex-case': 'lower',
     'color-hex-length': 'long',
@@ -61,8 +61,8 @@ module.exports = {
     'property-case': 'lower',
     'property-no-vendor-prefix': true,
 
-    'keyframe-declaration-no-important' : true,
-    'declaration-no-important' : true,
+    'keyframe-declaration-no-important': true,
+    'declaration-no-important': true,
 
     'declaration-bang-space-after': 'never',
     'declaration-bang-space-before': 'always',
@@ -106,10 +106,13 @@ module.exports = {
     'selector-list-comma-space-after': 'always-single-line',
     'selector-list-comma-space-before': 'never',
 
-    'rule-empty-line-before': ['always', {
-      'except': ['first-nested'],
-      'ignore': ['after-comment']
-    }],
+    'rule-empty-line-before': [
+      'always',
+      {
+        except: ['first-nested'],
+        ignore: ['after-comment'],
+      },
+    ],
 
     'media-feature-colon-space-after': 'always',
     'media-feature-colon-space-before': 'never',
@@ -124,42 +127,38 @@ module.exports = {
     'media-query-list-comma-space-after': 'always-single-line',
     'media-query-list-comma-space-before': 'never-single-line',
 
-    'at-rule-empty-line-before': ['always', {
-      'except': [
-        'first-nested',
-        'blockless-after-blockless'
-      ],
-      'ignore': ['after-comment']
-    }],
+    'at-rule-empty-line-before': [
+      'always',
+      {
+        except: ['first-nested', 'blockless-after-blockless'],
+        ignore: ['after-comment'],
+      },
+    ],
     'at-rule-name-case': 'lower',
     'at-rule-name-space-after': 'always',
-    'at-rule-no-unknown': [true, {
-      'ignoreAtRules': [
-        'mixin',
-        'define-mixin',
-        'include',
-        'content',
-        'rules',
-        'each'
-      ]
-    }],
+    'at-rule-no-unknown': [
+      true,
+      {
+        ignoreAtRules: ['mixin', 'define-mixin', 'include', 'content', 'rules', 'each'],
+      },
+    ],
     'at-rule-no-vendor-prefix': true,
     'at-rule-semicolon-newline-after': 'always',
 
-    'indentation': 2,
+    indentation: 2,
 
-    'max-nesting-depth' : [2, { 'ignoreAtRules': ['media'] }],
+    'max-nesting-depth': [2, { ignoreAtRules: ['media'] }],
 
     'max-empty-lines': 2,
     'no-eol-whitespace': true,
     'no-missing-end-of-source-newline': true,
 
-    'no-duplicate-at-import-rules' : true,
+    'no-duplicate-at-import-rules': true,
     'no-invalid-position-at-import-rule': true,
 
-    'color-no-invalid-hex' : true,
-    'color-no-hex' : null,
-    'color-named' : 'never',
-    'number-max-precision' : 2
-  }
+    'color-no-invalid-hex': true,
+    'color-no-hex': null,
+    'color-named': 'never',
+    'number-max-precision': 2,
+  },
 }
