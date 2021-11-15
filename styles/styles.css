@@ -1453,9 +1453,13 @@ li {
 }
 
 .hotels-stars {
-  margin: 0 auto;
   display: flex;
-  height: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin: 0 auto;
+  max-width: 120px;
+  min-height: 30px;
 }
 
 .hotels-stars-item {
@@ -1465,10 +1469,11 @@ li {
 
   width: 18px;
   height: 18px;
-  margin-right: 7px;
+  margin: 0 7px 7px 0;
 }
 
-.hotels-stars-item:last-child {
+.hotels-stars-item:last-child,
+.hotels-stars-item:nth-child(5) {
   margin-right: 0;
 }
 
