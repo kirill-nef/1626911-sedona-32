@@ -574,6 +574,7 @@ ul {
 
 .description-suptitle {
   margin: auto 0 30px;
+  width: 230px;
 
   color: #333333;
   line-height: 21px;
@@ -587,16 +588,12 @@ ul {
   margin-bottom: 0;
 }
 
-.description-suptitle-w170 {
+.description-suptitle-type1 {
   width: 170px;
 }
 
-.description-suptitle-w220 {
+.description-suptitle-type2 {
   width: 220px;
-}
-
-.description-suptitle-w230 {
-  width: 230px;
 }
 
 .card-type-1 {
