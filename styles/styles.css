@@ -475,6 +475,10 @@ ul {
   position: relative;
   padding: 51px 0 77px;
 
+  width: 100%;
+  min-height: 485px;
+  box-sizing: border-box;
+
   text-align: center;
   color: #ffffff;
 
